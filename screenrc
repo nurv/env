@@ -1,0 +1,28 @@
+# generic options
+shell zsh                   # default shell
+term xterm-256color         # set $TERM type
+startup_message off         # don't display the copyright page
+defscrollback 10000         # change scrollback to 10000 lines
+termcapinfo xterm ti@:te@   # fix scrollback in PuTTY
+vbell_msg "beep!"           # visible bell
+ 
+# add colors
+attrcolor b ".I"
+termcapinfo xterm-256color 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+defbce "on"
+ 
+# visual options
+hardstatus alwayslastline "%{= kw}%?%{-b kK}  %-W%?%{+b kW}  %n %t%?%{-b kK}%+W%?%=%{-b kg}%l% @ %H%{-b kK}  |  %{-b kM}%D %d/%m/%Y %c  "
+ 
+# bound keys
+bindkey -k k1 prev
+bindkey -k k2 next
+bindkey -k k3 screen
+bindkey -k k4 kill
+bindkey -k k5 detach
+ 
+escape ^ka
+ 
+# utf8
+setenv LC_CTYPE en_US.UTF-8
+defutf8 on

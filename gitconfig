@@ -1,0 +1,46 @@
+[user]
+  name = Artur Ventura
+  email = artur.ventura@gmail.com
+[color]
+  ui = true
+[push]
+  default = simple
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
+[alias]
+  # [aa = add all] Adds all files
+  aa  = add .
+  # [co = checkout]
+  co  = checkout
+  # [ci = commit]
+  ci  = commit
+  # [st = status] short status
+  st  = status -s
+  # [df = diff]
+  df  = diff
+  # [who = shortlog] who committed and how much
+  who = shortlog -nes
+  # [l = log] short one line logs with ref-names
+  l   = log --oneline --name-status --decorate=short
+  # [l = log] short one line logs with ref-names, date and author - nice colored
+  ll  = log --graph --pretty=format:'%C(yellow)%h%Creset -%C(red)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --date=relative
+  # fix commits that have typos on the message and/or missing files
+  #  missing files need to be added before invoking 'fix'
+  fix = commit --amend
+  # show a ranked count of git verbs
+  verbs = !git log --pretty=format:'%s' | cut -d ' ' -f 1 | sort | uniq -c | sort -n
+  # the "Ramalho Syndrome"
+  poop = stash pop
+  # list all the created aliases
+  alias = !git config --get-regexp alias | awk -F'.' '{ print $2 }'
+  # assume a file is never changed
+  assume = update-index --assume-unchanged
+  # list file that are assumed to never be changed
+  assumed  = "!git ls-files -v | grep ^h | cut -c 3-"
+  # stop assuming a file is never changed
+  unassume = update-index --no-assume-unchanged
+  # take a snapshot of your current working tree without removing the changes from your tree
+  snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
+[help]
+  autocorrect = 1

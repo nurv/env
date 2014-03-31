@@ -14,17 +14,12 @@ else
 fi
 export EDITOR="nano"
 export CVSEDITOR="nano"
-export CLICOLOR=1
-export LC_CTYPE=pt_PT.UTF-8
-export LC_ALL=pt_PT.UTF-8
+
 export PATH
 
 alias p="python manage.py"
 alias src="source ../bin/activate"
 
-export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/local/mysql/lib/
-export PATH=$PATH:/usr/local/mysql/bin/
-export GPGKEY=B621B2CE
 
 #!/bin/bash
 #
@@ -189,8 +184,4 @@ function marks {
     ls -l "$MARKPATH" | sed 's/  / /g' | cut -d' ' -f9- | sed 's/ -/\t-/g' && echo
 }
 
-export JAVA_OPTS="-server -Xms256m -Xmx1024m -XX:PermSize=384m"
-export MAVEN_OPTS="$JAVA_OPTS -Dorg.apache.jasper.compiler.Parser.STRICT_QUOTE_ESCAPING=false"
-export HISTSIZE=9999
-export HISTFILESIZE=999999
-
+source "$HOME/.env/common.sh"
