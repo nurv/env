@@ -14,6 +14,100 @@ setopt hist_ignore_space
 
 plugins=(textmate python git brew  git-extras git-flow mvn osx pip django sublime terminalapp textmate)
 
+
+
+local user_host="%{$terminfo[bold]$fg[green]%}%n@%m%{$reset_color%}"
+local current_dir="%{$terminfo[bold]$fg[blue]%} %~%{$reset_color%}"
+
 source $ZSH/oh-my-zsh.sh
+
+ZSH_THEME_GIT_PROMPT_PREFIX="["
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}]"
+ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%}✓%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_AHEAD="%{$fg[cyan]%}▴%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_BEHIND="%{$fg[magenta]%}▾%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_STAGED="%{$fg_bold[green]%}●%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_UNSTAGED="%{$fg_bold[yellow]%}●%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg_bold[red]%}●%{$reset_color%}"
+
+bureau_git_branch () {
+  ref=$(command git symbolic-ref HEAD 2> /dev/null) || \
+  ref=$(command git rev-parse --short HEAD 2> /dev/null) || return
+  echo "${ref#refs/heads/}"
+}
+
+bureau_git_status () {
+  _INDEX=$(command git status --porcelain -b 2> /dev/null)
+  _STATUS=""
+  if $(echo "$_INDEX" | grep '^[AMRD]. ' &> /dev/null); then
+    _STATUS="$_STATUS$ZSH_THEME_GIT_PROMPT_STAGED"
+  fi
+  if $(echo "$_INDEX" | grep '^.[MTD] ' &> /dev/null); then
+    _STATUS="$_STATUS$ZSH_THEME_GIT_PROMPT_UNSTAGED"
+  fi
+  if $(echo "$_INDEX" | grep -E '^\?\? ' &> /dev/null); then
+    _STATUS="$_STATUS$ZSH_THEME_GIT_PROMPT_UNTRACKED"
+  fi
+  if $(echo "$_INDEX" | grep '^UU ' &> /dev/null); then
+    _STATUS="$_STATUS$ZSH_THEME_GIT_PROMPT_UNMERGED"
+  fi
+  if $(command git rev-parse --verify refs/stash >/dev/null 2>&1); then
+    _STATUS="$_STATUS$ZSH_THEME_GIT_PROMPT_STASHED"
+  fi
+  if $(echo "$_INDEX" | grep '^## .*ahead' &> /dev/null); then
+    _STATUS="$_STATUS$ZSH_THEME_GIT_PROMPT_AHEAD"
+  fi
+  if $(echo "$_INDEX" | grep '^## .*behind' &> /dev/null); then
+    _STATUS="$_STATUS$ZSH_THEME_GIT_PROMPT_BEHIND"
+  fi
+  if $(echo "$_INDEX" | grep '^## .*diverged' &> /dev/null); then
+    _STATUS="$_STATUS$ZSH_THEME_GIT_PROMPT_DIVERGED"
+  fi
+
+  echo $_STATUS
+}
+
+bureau_git_prompt () {
+  local _branch=$(bureau_git_branch)
+  local _status=$(bureau_git_status)
+  if [[ "${_branch}x" != "x" ]]; then
+    _result="$ZSH_THEME_GIT_PROMPT_PREFIX$_branch"
+    if [[ "${_status}x" != "x" ]]; then
+      _result="$_result $_status"
+    fi
+    _result="$_result$ZSH_THEME_GIT_PROMPT_SUFFIX"
+  fi
+  echo $_result
+}
+
+_get_virtualenv(){
+  if test -z "$VIRTUAL_ENV" ; then
+      echo ""
+  else
+      echo "$fg[yellow]⬡ `basename \"$VIRTUAL_ENV\"`$reset_color"
+  fi
+}
+
+function set_prompt_symbol () {
+  if [ $RETURN_STATUS -eq 0 ]; then
+    echo "▶"
+  else
+    echo "$fg[red]▶${reset_color}"
+  fi
+}
+
+function __prompt_command(){
+  RETURN_STATUS=$?
+  PS1='╭─ ${user_host} ${current_dir} $(bureau_git_prompt) $(_get_virtualenv)
+╰─$(set_prompt_symbol) '
+}
+
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+export PROMPT_COMMAND=__prompt_command
+
+precmd(){
+  __prompt_command
+}
+
 
 source "$HOME/.env/common.sh"
