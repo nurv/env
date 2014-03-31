@@ -21,8 +21,9 @@ local current_dir="%{$terminfo[bold]$fg[blue]%} %~%{$reset_color%}"
 
 source $ZSH/oh-my-zsh.sh
 
-ZSH_THEME_GIT_PROMPT_PREFIX="["
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}]"
+
+ZSH_THEME_GIT_PROMPT_PREFIX="("
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%})"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%}✓%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_AHEAD="%{$fg[cyan]%}▴%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_BEHIND="%{$fg[magenta]%}▾%{$reset_color%}"
@@ -63,16 +64,16 @@ bureau_git_status () {
   if $(echo "$_INDEX" | grep '^## .*diverged' &> /dev/null); then
     _STATUS="$_STATUS$ZSH_THEME_GIT_PROMPT_DIVERGED"
   fi
-
+  _STATUS="$_STATUS"
   echo $_STATUS
 }
 
 bureau_git_prompt () {
   local _branch=$(bureau_git_branch)
-  local _status=$(bureau_git_status)
+  local _status="$(bureau_git_status)"
   if [[ "${_branch}x" != "x" ]]; then
     _result="$ZSH_THEME_GIT_PROMPT_PREFIX$_branch"
-    if [[ "${_status}x" != "x" ]]; then
+    if [[ "$_statusx" != "x" ]]; then
       _result="$_result $_status"
     fi
     _result="$_result$ZSH_THEME_GIT_PROMPT_SUFFIX"
@@ -90,16 +91,16 @@ _get_virtualenv(){
 
 function set_prompt_symbol () {
   if [ $RETURN_STATUS -eq 0 ]; then
-    echo "▶"
+    echo "[!]"
   else
-    echo "$fg[red]▶${reset_color}"
+    echo "[$fg[cyan]!${reset_color}]"
   fi
 }
 
 function __prompt_command(){
   RETURN_STATUS=$?
-  PS1='╭─ ${user_host} ${current_dir} $(bureau_git_prompt) $(_get_virtualenv)
-╰─$(set_prompt_symbol) '
+  PS1='${user_host} ${current_dir} $(bureau_git_prompt) $(_get_virtualenv)
+$(set_prompt_symbol) '
 }
 
 export VIRTUAL_ENV_DISABLE_PROMPT=1
