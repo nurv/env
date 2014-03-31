@@ -14,11 +14,11 @@ git clone https://github.com/nurv/env.git .env
 echo "Rewiring..."
 
 # backingup old stuff
-zshconfig = "~/.zshrc"
-if [[ $platform == "linux"]]; then
-	bashconfig = "~/.bashrc"
+zshconfig="~/.zshrc"
+if [[ $platform == "linux" ]]; then
+	bashconfig="~/.bashrc"
 else
-	bashconfig = "~/.bash_profile"	
+	bashconfig="~/.bash_profile"	
 fi
 
 if [ -f $zshconfig ]; then
