@@ -66,7 +66,7 @@ alias mvn=_mvn
 upenv(){
   pushd "$HOME/.env" > /dev/null
   git pull origin
-  if [ -n $BASH ]; then
+  if [[ $SHELL == *bash* ]]; then
     source "$HOME/.bashrc"
   else
     source "$HOME/.zshrc"
