@@ -71,7 +71,7 @@ upenv(){
   else
     source "$HOME/.zshrc"
   fi
-  popd
+  popd > /dev/null
 }
 
 alias vlc='open -a VLC'
