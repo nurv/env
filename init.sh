@@ -3,7 +3,7 @@ pushd $HOME > /dev/null
 platform='unknown'
 unamestr=`uname`
 
-if [[ ! -d "$HOME/.env"]]; then
+if [[ ! -d "$HOME/.env" ]]; then
     if [[ "$unamestr" == 'Linux' ]]; then
        platform='linux'
     elif [[ "$unamestr" == 'Darwin' ]]; then
