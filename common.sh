@@ -59,7 +59,6 @@ function _mvn(){
   cd $dir
 }
 
-alias mvn=_mvn
 
 #update dotenv
 

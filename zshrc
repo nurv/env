@@ -14,8 +14,6 @@ setopt hist_ignore_space
 
 plugins=(textmate python git brew  git-extras git-flow mvn osx pip django sublime terminalapp textmate)
 
-
-
 local user_host="%{$terminfo[bold]$fg[green]%}%n@%m%{$reset_color%}"
 local current_dir="%{$terminfo[bold]$fg[blue]%} %~%{$reset_color%}"
 
@@ -89,6 +87,15 @@ _get_virtualenv(){
   fi
 }
 
+_get_pom(){
+  POM=$(command perl "$HOME/.env/getpom.pl")
+  if [ -z "$POM" ]; then
+      echo ""
+  else
+      echo "$fg[yellow]⬡ `basename \"$POM\"`$reset_color"
+  fi
+}
+
 function set_prompt_symbol () {
   if [ $RETURN_STATUS -eq 0 ]; then
     echo "[!]"
@@ -99,8 +106,8 @@ function set_prompt_symbol () {
 
 function __prompt_command(){
   RETURN_STATUS=$?
-  PS1='${user_host} ${current_dir} $(bureau_git_prompt) $(_get_virtualenv)
-$(set_prompt_symbol) '
+  PS1='╭${user_host} ${current_dir} $(bureau_git_prompt) $(_get_virtualenv)$(_get_pom)
+╰$(set_prompt_symbol) '
 }
 
 export VIRTUAL_ENV_DISABLE_PROMPT=1
