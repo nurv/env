@@ -113,7 +113,7 @@ get_user(){
   if [[ -n $SSH_CONNECTION ]]; then
     result="$result%m"
   fi
-  if [ ${#result} -ne 0 ]; then
+  if [ "${#result}" -ne "0" ]; then
     echo="$result "
   else
     echo=""
