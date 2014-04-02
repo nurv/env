@@ -103,7 +103,7 @@ get_user(){
 get_user(){
   local result="";
   if [[ $LOGNAME != "nurv" ]]; then
-    result="$result%n"
+    result="$result%USERNAME"
   fi
 
   if [[ $LOGNAME != "nurv" && -n $SSH_CONNECTION ]]; then
@@ -111,7 +111,7 @@ get_user(){
   fi
 
   if [[ -n $SSH_CONNECTION ]]; then
-    result="$result%m $terminfo[bold]$fg[cyan]★%{$reset_color%}"
+    result="$result%(command hostname -s) $terminfo[bold]$fg[cyan]★%{$reset_color%}"
   fi
 
   if [ "${#result}" -ne "0" ]; then
