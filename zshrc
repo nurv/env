@@ -87,12 +87,16 @@ bureau_git_prompt () {
     fi
     _result="$_result$ZSH_THEME_GIT_PROMPT_SUFFIX"
   fi
+    if [ "${#_result}" -ne "0" ]; then
+    _result=" $_result"
+  fi
   echo $_result
 }
 
 local host_path="%{$terminfo[bold]$fg[green]%}%m%{$reset_color%}"
-
-local current_dir="%{$terminfo[bold]$fg[blue]%}%~%{$reset_color%}"
+current_dir(){
+  echo "%{$terminfo[bold]$fg[blue]%}${PWD/#$HOME/~}%{$reset_color%}"
+}
 
 get_user(){
   if [[ $LOGNAME != $USER ]]; then
@@ -130,7 +134,7 @@ _get_virtualenv(){
   if test -z "$VIRTUAL_ENV" ; then
       echo ""
   else
-      echo "$fg[yellow]⬡ `basename \"$VIRTUAL_ENV\"`$reset_color"
+      echo " $fg[yellow]⬡ `basename \"$VIRTUAL_ENV\"`$reset_color"
   fi
 }
 
@@ -139,7 +143,7 @@ _get_pom(){
   if [ -z "$POM" ]; then
       echo ""
   else
-      echo "$fg[yellow]⬡ `basename \"$POM\"`$reset_color"
+      echo " $fg[yellow]⬡ `basename \"$POM\"`$reset_color"
   fi
 }
 
@@ -147,14 +151,27 @@ function set_prompt_symbol () {
   if [ $RETURN_STATUS -eq 0 ]; then
     echo "[!]"
   else
-    echo "[$fg[cyan]!${reset_color}]"
+    echo "[$fg[cyan]!${reset_color}]: "
+  fi
+}
+has_jobs(){
+  local j="$(jobs -p)"
+  if [[ -n $j ]]; then
+    echo " $fg[magenta]♨${reset_color}"
+  else
+    echo ""
   fi
 }
 
 function __prompt_command(){
   RETURN_STATUS=$?
-  PS1='╭ $(get_host)${current_dir} $(bureau_git_prompt) $(_get_virtualenv)$(_get_pom)
+  local hud="$(get_host)$(current_dir)$(bureau_git_prompt)$(_get_virtualenv)$(_get_pom)"
+  if [ "${#hud}" -gt $(($COLUMNS + 15*5)) ]; then
+    PS1='╭ $(get_host)$(current_dir)$(bureau_git_prompt)$(_get_virtualenv)$(_get_pom)
 ╰$(set_prompt_symbol) '
+  else
+    PS1='[$(get_host)$(current_dir)$(has_jobs)$(bureau_git_prompt)$(_get_virtualenv)$(_get_pom)]: '
+  fi
 }
 
 export VIRTUAL_ENV_DISABLE_PROMPT=1
