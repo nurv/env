@@ -92,7 +92,7 @@ bureau_git_prompt () {
 
 local host_path="%{$terminfo[bold]$fg[green]%}%m%{$reset_color%}"
 
-local current_dir="%{$terminfo[bold]$fg[blue]%} %~%{$reset_color%}"
+local current_dir="%{$terminfo[bold]$fg[blue]%}%~%{$reset_color%}"
 
 get_user(){
   if [[ $LOGNAME != $USER ]]; then
@@ -102,18 +102,22 @@ get_user(){
 
 get_user(){
   local result="";
-  if [[ $LOGNAME != $USER ]]; then
+  if [[ $LOGNAME != "nurv" ]]; then
     result="$result%n"
   fi
 
-  if [[ $LOGNAME != $USER && -n $SSH_CONNECTION ]]; then
+  if [[ $LOGNAME != "nurv" && -n $SSH_CONNECTION ]]; then
     result="$result@"
   fi
 
   if [[ -n $SSH_CONNECTION ]]; then
     result="$result%m"
   fi
-  echo $result
+  if [ ${#result} -ne 0 ]; then
+    echo="$result "
+  else
+    echo=""
+  fi
 }
 
 get_host(){
@@ -147,7 +151,7 @@ function set_prompt_symbol () {
 
 function __prompt_command(){
   RETURN_STATUS=$?
-  PS1='╭$(get_host)${current_dir} $(bureau_git_prompt) $(_get_virtualenv)$(_get_pom)
+  PS1='╭ $(get_host)${current_dir} $(bureau_git_prompt) $(_get_virtualenv)$(_get_pom)
 ╰$(set_prompt_symbol) '
 }
 
