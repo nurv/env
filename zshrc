@@ -111,7 +111,7 @@ get_user(){
   fi
 
   if [[ -n $SSH_CONNECTION ]]; then
-    result="$result%m"
+    result="$result%m $terminfo[bold]$fg[cyan]☁%{$reset_color%}"
   fi
 
   if [ "${#result}" -ne "0" ]; then
