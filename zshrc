@@ -14,9 +14,6 @@ setopt hist_ignore_space
 
 plugins=(textmate python git brew  git-extras git-flow mvn osx pip django sublime terminalapp textmate)
 
-local user_host="%{$terminfo[bold]$fg[green]%}%n@%m%{$reset_color%}"
-local current_dir="%{$terminfo[bold]$fg[blue]%} %~%{$reset_color%}"
-
 source $ZSH/oh-my-zsh.sh
 
 
@@ -33,6 +30,16 @@ bureau_git_branch () {
   ref=$(command git symbolic-ref HEAD 2> /dev/null) || \
   ref=$(command git rev-parse --short HEAD 2> /dev/null) || return
   echo "${ref#refs/heads/}"
+}
+
+get_space () {
+  local STR=$1$2
+  local zero='%([BSUbfksu]|([FB]|){*})'
+  local LENGTH=${#${(S%%)STR//$~zero/}} 
+  local SPACES=""
+  (( LENGTH = ${COLUMNS} - $LENGTH - 1))
+
+  echo ${COLUMNS}
 }
 
 bureau_git_status () {
@@ -66,6 +73,10 @@ bureau_git_status () {
   echo $_STATUS
 }
 
+user_host(){
+  return "%{$terminfo[bold]$fg[green]%}%n@%m%{$reset_color%}"
+}
+
 bureau_git_prompt () {
   local _branch=$(bureau_git_branch)
   local _status="$(bureau_git_status)"
@@ -77,6 +88,36 @@ bureau_git_prompt () {
     _result="$_result$ZSH_THEME_GIT_PROMPT_SUFFIX"
   fi
   echo $_result
+}
+
+local host_path="%{$terminfo[bold]$fg[green]%}%m%{$reset_color%}"
+
+local current_dir="%{$terminfo[bold]$fg[blue]%} %~%{$reset_color%}"
+
+get_user(){
+  if [[ $LOGNAME != $USER ]]; then
+    echo "%n"
+  fi
+}
+
+get_user(){
+  local result="";
+  if [[ $LOGNAME != $USER ]]; then
+    $result="$result%n"
+  fi
+
+  if [[ $LOGNAME != $USER && -n $SSH_CONNECTION ]]; then
+    $result="$result@"
+  fi
+
+  if [[ -n $SSH_CONNECTION ]]; then
+    $result="$result%m"
+  fi
+  echo $result
+}
+
+get_host(){
+  echo "%{$terminfo[bold]$fg[green]%}$(get_user)%{$reset_color%}"
 }
 
 _get_virtualenv(){
@@ -106,7 +147,7 @@ function set_prompt_symbol () {
 
 function __prompt_command(){
   RETURN_STATUS=$?
-  PS1='╭${user_host} ${current_dir} $(bureau_git_prompt) $(_get_virtualenv)$(_get_pom)
+  PS1='╭$(get_host)${current_dir} $(bureau_git_prompt) $(_get_virtualenv)$(_get_pom)
 ╰$(set_prompt_symbol) '
 }
 
