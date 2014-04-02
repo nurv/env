@@ -103,15 +103,15 @@ get_user(){
 get_user(){
   local result="";
   if [[ $LOGNAME != $USER ]]; then
-    $result="$result%n"
+    result="$result%n"
   fi
 
   if [[ $LOGNAME != $USER && -n $SSH_CONNECTION ]]; then
-    $result="$result@"
+    result="$result@"
   fi
 
   if [[ -n $SSH_CONNECTION ]]; then
-    $result="$result%m"
+    result="$result%m"
   fi
   echo $result
 }
