@@ -18,13 +18,13 @@ source $ZSH/oh-my-zsh.sh
 
 
 ZSH_THEME_GIT_PROMPT_PREFIX="("
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%})"
-ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%}✓%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_AHEAD="%{$fg[cyan]%}▴%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_BEHIND="%{$fg[magenta]%}▾%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_STAGED="%{$fg_bold[green]%}●%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_UNSTAGED="%{$fg_bold[yellow]%}●%{$reset_color%}"
-ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg_bold[red]%}●%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%f)"
+ZSH_THEME_GIT_PROMPT_CLEAN="%B%F{green}✓%f%b"
+ZSH_THEME_GIT_PROMPT_AHEAD="%F▴%f"
+ZSH_THEME_GIT_PROMPT_BEHIND="%F▾%f"
+ZSH_THEME_GIT_PROMPT_STAGED="%B%F{green}●%f%b"
+ZSH_THEME_GIT_PROMPT_UNSTAGED="%B%F{yellow}●%f%b"
+ZSH_THEME_GIT_PROMPT_UNTRACKED="%B%F{red}●%f%b"
 
 bureau_git_branch () {
   ref=$(command git symbolic-ref HEAD 2> /dev/null) || \
@@ -74,7 +74,7 @@ bureau_git_status () {
 }
 
 user_host(){
-  return "%{$terminfo[bold]$fg[green]%}%n@%m%{$reset_color%}"
+  return "%B%F{green}%n@%m%f%b"
 }
 
 bureau_git_prompt () {
@@ -93,9 +93,9 @@ bureau_git_prompt () {
   echo $_result
 }
 
-local host_path="%{$terminfo[bold]$fg[green]%}%m%{$reset_color%}"
+local host_path="%B%F{green}%m%f%b"
 current_dir(){
-  echo "%{$terminfo[bold]$fg[blue]%}${PWD/#$HOME/~}%{$reset_color%}"
+  echo "%B%F{blue}${PWD/#$HOME/~}%f%b"
 }
 
 get_user(){
@@ -115,7 +115,7 @@ get_user(){
   fi
 
   if [[ -n $SSH_CONNECTION ]]; then
-    result="$result$(command hostname -s) $terminfo[bold]$fg[cyan]★%{$reset_color%}"
+    result="$result$(command hostname -s) %B%F{cyan}★%f%b"
   fi
 
   if [ "${#result}" -ne "0" ]; then
@@ -127,14 +127,14 @@ get_user(){
 }
 
 get_host(){
-  echo "%{$terminfo[bold]$fg[green]%}$(get_user)%{$reset_color%}"
+  echo "%B%F{green}$(get_user)%f%b"
 }
 
 _get_virtualenv(){
   if test -z "$VIRTUAL_ENV" ; then
       echo ""
   else
-      echo " $fg[yellow]⬡ `basename \"$VIRTUAL_ENV\"`$reset_color"
+      echo " %F{yellow}⬡ `basename \"$VIRTUAL_ENV\"`%f"
   fi
 }
 
@@ -143,7 +143,7 @@ _get_pom(){
   if [ -z "$POM" ]; then
       echo ""
   else
-      echo " $fg[yellow]⬡ `basename \"$POM\"`$reset_color"
+      echo " %F{yellow}⬡ `basename \"$POM\"`%f"
   fi
 }
 
@@ -151,13 +151,13 @@ function set_prompt_symbol () {
   if [ $RETURN_STATUS -eq 0 ]; then
     echo "[!]"
   else
-    echo "[$fg[cyan]!${reset_color}]: "
+    echo "[%F{cyan}!%f}]: "
   fi
 }
 has_jobs(){
   local j="$(jobs -p)"
   if [[ -n $j ]]; then
-    echo " $fg[magenta]♨${reset_color}"
+    echo " %F{magenta}♨%f}"
   else
     echo ""
   fi
