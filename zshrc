@@ -154,6 +154,7 @@ function set_prompt_symbol () {
     echo "[%F{cyan}!%f}]: "
   fi
 }
+
 has_jobs(){
   local j="$(jobs -p)"
   if [[ -n $j ]]; then
