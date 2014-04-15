@@ -21,13 +21,12 @@ _pmanage_backsearch(){
     if [[ $dir != `pwd` ]]; then
       echo "$fg[green]Using `pwd`$reset_color"
     fi
-    python manage.py $@
+    python manage.py "$@"
   fi
 }
 
 function _pmanage(){
   local dir=`pwd`
-  local args=$@
   _pmanage_backsearch $@
   cd $dir
 }
@@ -48,13 +47,12 @@ _mvn_backsearch(){
     if [[ $dir != `pwd` ]]; then
       echo "$fg[green]Using `pwd`$reset_color"
     fi
-    mvn $@
+    mvn "$@"
   fi
 }
 
 function _mvn(){
   local dir=`pwd`
-  local args=$@
   _mvn_backsearch $@
   cd $dir
 }
