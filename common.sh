@@ -72,6 +72,14 @@ upenv(){
   popd > /dev/null
 }
 
+function tabname {
+  printf "\e]1;$1\a"
+}
+
+function winname {
+  printf "\e]2;$1\a"
+}
+
 alias vlc='open -a VLC'
 
 source "$HOME/.env/vars.sh"

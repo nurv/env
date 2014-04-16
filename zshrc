@@ -12,7 +12,7 @@ setopt extended_history
 setopt hist_expire_dups_first
 setopt hist_ignore_space
 
-plugins=(textmate python git brew  git-extras git-flow mvn osx pip django sublime terminalapp textmate)
+plugins=(textmate python git brew  git-extras git-flow mvn osx pip django sublime textmate)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -139,7 +139,7 @@ _get_virtualenv(){
 }
 
 _get_pom(){
-  POM=$(command perl "$HOME/.env/getpom.pl")
+  POM=$(command perl -I ~/.env "$HOME/.env/getpom.pl")
   if [ -z "$POM" ]; then
       echo ""
   else
