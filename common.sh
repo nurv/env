@@ -83,4 +83,6 @@ function winname {
 alias vlc='open -a VLC'
 
 source "$HOME/.env/vars.sh"
-
+export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_OPTS="-server -Xms256m -Xmx1024m"
+export MAVEN_OPTS="$JAVA_OPTS"

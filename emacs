@@ -1,7 +1,7 @@
 
 (if window-system
     (let ()
-      ;;(set-default-font "-apple-monaco-medium-r-normal--10-90-72-72-m-90-mac-roman")
+      (set-default-font "-apple-monaco-medium-r-normal--12-90-72-72-m-90-mac-roman")
       ;;(setq mac-allow-anti-aliasing nil)
       ))
 
@@ -34,20 +34,20 @@
 ; paths
 ; ============================================================================
 (setq home (getenv "HOME"))
-(add-to-load-path (concat home "/.emacs.d/"))
+(add-to-load-path (concat home "/.emacs.d/lisp"))
 
-(add-to-load-path (concat home "/.emacs.d/mmm-mode"))
+(add-to-load-path (concat home "/.emacs.d/lisp/mmm-mode"))
 
-(add-to-load-path (concat home "/.emacs.d/yasnippet"))
+(add-to-load-path (concat home "/.emacs.d/lisp/yasnippet"))
 (add-to-load-path "/usr/local/share/emacs/site-lisp")
 (add-to-load-path "/usr/share/emacs/site-lisp/w3m")
-(add-to-load-path (concat home "/.emacs.d/erc"))
-(add-to-load-path (concat home "/.emacs.d/django-mode"))
-(add-to-load-path (concat home "/.emacs.d/jde/lisp"))
+(add-to-load-path (concat home "/.emacs.d/lisp/erc"))
+(add-to-load-path (concat home "/.emacs.d/lisp/django-mode"))
+(add-to-load-path (concat home "/.emacs.d/lisp/jde/lisp"))
 ;(add-to-load-path (concat home "/.emacs.d/cedet/common"))
-(add-to-load-path (concat home "/.emacs.d/elib"))
-(add-to-load-path (concat home "/.emacs.d/w3m"))
-(add-to-load-path (concat home "/.emacs.d/org-mode/lisp"))
+(add-to-load-path (concat home "/.emacs.d/lisp/elib"))
+(add-to-load-path (concat home "/.emacs.d/lisp/w3m"))
+(add-to-load-path (concat home "/.emacs.d/lisp/org-mode/lisp"))
 ;(setq swank-clojure-binary nil)
 
 (setq jde-jdk `("/System/Library/Framework/JavaVM.framework/Versions/CurrentJDK/Home"))
@@ -563,8 +563,7 @@
                  'py-beginning-of-def-or-class)
             (setq outline-regexp "def\\|class ")))
 
-
-(setq visible-bell t)
+(setq visible-bell nil)
 
 ;; (defcustom echo-area-bell-string "*DING* " ;"♪"
 ;;   "Message displayed in mode-line by `echo-area-bell' function."
@@ -591,13 +590,15 @@
 ;;   (message ""))
 ;; (setq ring-bell-function 'echo-area-bell)
 
-
-(add-to-list 'load-path "~/.emacs.d/slime/")
-(require 'slime-autoloads)
-
 ;; Set your lisp system and, optionally, some contribs
 (setq inferior-lisp-program "~/abcl/abcl.sh")
 (setq slime-contribs '(slime-fancy))
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
                          ("marmalade" . "http://marmalade-repo.org/packages/")
                          ("melpa" . "http://melpa.milkbox.net/packages/")))
+
+(if window-system
+    (defun fullscreen ()
+      (interactive)
+      (toggle-frame-fullscreen)))
+      
