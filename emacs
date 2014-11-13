@@ -62,8 +62,7 @@
 ;(require 'jde)
 (require 'tramp)
 
-(require 'django-html-mode)
-(require 'django-mode)
+
 (require 'php-mode)
 (require 'color-theme)
 (require 'mic-paren)

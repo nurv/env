@@ -185,3 +185,6 @@ function marks {
 }
 
 source "$HOME/.env/common.sh"
+
+# added by travis gem
+[ -f /Users/nurv/.travis/travis.sh ] && source /Users/nurv/.travis/travis.sh

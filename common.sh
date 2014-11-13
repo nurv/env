@@ -33,31 +33,6 @@ function _pmanage(){
 
 alias p=_pmanage
 
-#mvn anywhere
-
-_mvn_backsearch(){
-  if [ ! -f pom.xml ]; then
-    if [[ `pwd` == "/" ]]; then
-      echo "Not within a Maven Project"
-    else
-      cd ..
-      _mvn_backsearch
-    fi
-  else
-    if [[ $dir != `pwd` ]]; then
-      echo "$fg[green]Using `pwd`$reset_color"
-    fi
-    mvn "$@"
-  fi
-}
-
-function _mvn(){
-  local dir=`pwd`
-  _mvn_backsearch $@
-  cd $dir
-}
-
-alias mvn=_mvn
 
 #update dotenv
 
@@ -83,6 +58,11 @@ function winname {
 alias vlc='open -a VLC'
 
 source "$HOME/.env/vars.sh"
-export JAVA_HOME=$(/usr/libexec/java_home)
+
+if [[ $PLATFORM == "darwin" ]]; then
+	export PATH="$PATH:/usr/local/mysql/bin/"
+	export JAVA_HOME=$(/usr/libexec/java_home)
+fi
+
 export JAVA_OPTS="-server -Xms256m -Xmx1024m"
 export MAVEN_OPTS="$JAVA_OPTS"
