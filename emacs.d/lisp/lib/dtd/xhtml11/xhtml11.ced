@@ -1,1255 +1,0 @@
-;;; This file was created by psgml on Tue Oct 29 23:47:12 2002
-(sgml-saved-dtd-version 7)
-("/home/darren/lib/DTD/xhtml-modularization/xhtml-struct-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-form-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-table-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-object-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-param-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-ssismap-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-csismap-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-image-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-style-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-script-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-base-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-meta-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-link-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-blkpres-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-inlpres-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-pres-1.mod" "/home/darren/lib/DTD/ruby/xhtml-ruby-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-bdo-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-edit-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-list-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-hypertext-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-blkphras-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-blkstruct-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-inlphras-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-inlstruct-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-text-1.mod" "/home/darren/lib/DTD/xhtml1/xhtml-special.ent" "/home/darren/lib/DTD/xhtml1/xhtml-symbol.ent" "/home/darren/lib/DTD/xhtml1/xhtml-lat1.ent" "/home/darren/lib/DTD/xhtml-modularization/xhtml-charent-1.mod" "/home/darren/lib/DTD/xhtml11/xhtml11-model-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-attribs-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-events-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-qname-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-datatypes-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-notations-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-framework-1.mod" "/home/darren/lib/DTD/xhtml-modularization/xhtml-inlstyle-1.mod" "/home/darren/lib/DTD/xhtml11/xhtml11.dtd")
-(nil ("XHTML.version" text "-//W3C//DTD XHTML 1.1//EN" nil) ("NS.prefixed" text "IGNORE" nil) ("XHTML.prefix" text "" nil) ("XLINK.xmlns" text "" nil) ("XLINK.xmlns.attrib" text "" nil) ("XHTML.profile" text "" nil) ("XHTML.bidi" text "INCLUDE" nil) ("xhtml-prefw-redecl.module" text "IGNORE" nil) ("xhtml-events.module" text "INCLUDE" nil) ("xhtml-inlstyle.module" text "INCLUDE" nil) ("xhtml-inlstyle.mod" text ("-//W3C//ELEMENTS XHTML Inline Style 1.0//EN" "http://www.w3.org/TR/xhtml-modularization/DTD/xhtml-inlstyle-1.mod" . "/home/darren/lib/DTD/xhtml11/") nil) ("style.attrib" text "style        CDATA                    #IMPLIED" nil) ("Core.extra.attrib" text "style        CDATA                    #IMPLIED" nil) ("xhtml-model.mod" text ("-//W3C//ENTITIES XHTML 1.1 Document Model 1.0//EN" "xhtml11-model-1.mod" . "/home/darren/lib/DTD/xhtml11/") nil) ("xhtml-framework.module" text "INCLUDE" nil) ("xhtml-framework.mod" text ("-//W3C//ENTITIES XHTML Modular Framework 1.0//EN" "http://www.w3.org/TR/xhtml-modularization/DTD/xhtml-framework-1.mod" . "/home/darren/lib/DTD/xhtml11/") nil) ("xhtml-arch.module" text "IGNORE" nil) ("xhtml-notations.module" text "INCLUDE" nil) ("xhtml-notations.mod" text ("-//W3C//NOTATIONS XHTML Notations 1.0//EN" "xhtml-notations-1.mod" . "/home/darren/lib/DTD/xhtml-modularization/") nil) ("xhtml-datatypes.module" text "INCLUDE" nil) ("xhtml-datatypes.mod" text ("-//W3C//ENTITIES XHTML Datatypes 1.0//EN" "xhtml-datatypes-1.mod" . "/home/darren/lib/DTD/xhtml-modularization/") nil) ("Length.datatype" text "CDATA" nil) ("LinkTypes.datatype" text "NMTOKENS" nil) ("MediaDesc.datatype" text "CDATA" nil) ("MultiLength.datatype" text "CDATA" nil) ("Number.datatype" text "CDATA" nil) ("Pixels.datatype" text "CDATA" nil) ("Script.datatype" text "CDATA" nil) ("Text.datatype" text "CDATA" nil) ("Character.datatype" text "CDATA" nil) ("Charset.datatype" text "CDATA" nil) ("Charsets.datatype" text "CDATA" nil) ("Color.datatype" text "CDATA" nil) ("ContentType.datatype" text "CDATA" nil) ("ContentTypes.datatype" text "CDATA" nil) ("Datetime.datatype" text "CDATA" nil) ("FPI.datatype" text "CDATA" nil) ("LanguageCode.datatype" text "NMTOKEN" nil) ("URI.datatype" text "CDATA" nil) ("URIs.datatype" text "CDATA" nil) ("xhtml-xlink.mod" text "" nil) ("xhtml-qname.module" text "INCLUDE" nil) ("xhtml-qname.mod" text ("-//W3C//ENTITIES XHTML Qualified Names 1.0//EN" "xhtml-qname-1.mod" . "/home/darren/lib/DTD/xhtml-modularization/") nil) ("XHTML.prefixed" text "IGNORE" nil) ("XHTML.xmlns" text "http://www.w3.org/1999/xhtml" nil) ("XHTML.pfx" text "" nil) ("xhtml-qname-extra.mod" text "" nil) ("XHTML.xmlns.extra.attrib" text "" nil) ("NS.decl.attrib" text "" nil) ("XHTML.xmlns.attrib" text "xmlns        CDATA           #FIXED 'http://www.w3.org/1999/xhtml'
-      " nil) ("xhtml-qname.redecl" text "" nil) ("applet.qname" text "applet" nil) ("base.qname" text "base" nil) ("bdo.qname" text "bdo" nil) ("address.qname" text "address" nil) ("blockquote.qname" text "blockquote" nil) ("pre.qname" text "pre" nil) ("h1.qname" text "h1" nil) ("h2.qname" text "h2" nil) ("h3.qname" text "h3" nil) ("h4.qname" text "h4" nil) ("h5.qname" text "h5" nil) ("h6.qname" text "h6" nil) ("hr.qname" text "hr" nil) ("div.qname" text "div" nil) ("p.qname" text "p" nil) ("ins.qname" text "ins" nil) ("del.qname" text "del" nil) ("form.qname" text "form" nil) ("label.qname" text "label" nil) ("input.qname" text "input" nil) ("select.qname" text "select" nil) ("optgroup.qname" text "optgroup" nil) ("option.qname" text "option" nil) ("textarea.qname" text "textarea" nil) ("fieldset.qname" text "fieldset" nil) ("legend.qname" text "legend" nil) ("button.qname" text "button" nil) ("a.qname" text "a" nil) ("img.qname" text "img" nil) ("abbr.qname" text "abbr" nil) ("acronym.qname" text "acronym" nil) ("cite.qname" text "cite" nil) ("code.qname" text "code" nil) ("dfn.qname" text "dfn" nil) ("em.qname" text "em" nil) ("kbd.qname" text "kbd" nil) ("q.qname" text "q" nil) ("samp.qname" text "samp" nil) ("strong.qname" text "strong" nil) ("var.qname" text "var" nil) ("b.qname" text "b" nil) ("big.qname" text "big" nil) ("i.qname" text "i" nil) ("small.qname" text "small" nil) ("sub.qname" text "sub" nil) ("sup.qname" text "sup" nil) ("tt.qname" text "tt" nil) ("br.qname" text "br" nil) ("span.qname" text "span" nil) ("map.qname" text "map" nil) ("area.qname" text "area" nil) ("link.qname" text "link" nil) ("dl.qname" text "dl" nil) ("dt.qname" text "dt" nil) ("dd.qname" text "dd" nil) ("ol.qname" text "ol" nil) ("ul.qname" text "ul" nil) ("li.qname" text "li" nil) ("meta.qname" text "meta" nil) ("param.qname" text "param" nil) ("object.qname" text "object" nil) ("script.qname" text "script" nil) ("noscript.qname" text "noscript" nil) ("html.qname" text "html" nil) ("head.qname" text "head" nil) ("title.qname" text "title" nil) ("body.qname" text "body" nil) ("style.qname" text "style" nil) ("table.qname" text "table" nil) ("caption.qname" text "caption" nil) ("thead.qname" text "thead" nil) ("tfoot.qname" text "tfoot" nil) ("tbody.qname" text "tbody" nil) ("colgroup.qname" text "colgroup" nil) ("col.qname" text "col" nil) ("tr.qname" text "tr" nil) ("th.qname" text "th" nil) ("td.qname" text "td" nil) ("ruby.qname" text "ruby" nil) ("rbc.qname" text "rbc" nil) ("rtc.qname" text "rtc" nil) ("rb.qname" text "rb" nil) ("rt.qname" text "rt" nil) ("rp.qname" text "rp" nil) ("alt.qname" text "alt" nil) ("xhtml-events.mod" text ("-//W3C//ENTITIES XHTML Intrinsic Events 1.0//EN" "xhtml-events-1.mod" . "/home/darren/lib/DTD/xhtml-modularization/") nil) ("Events.attrib" text "onclick      CDATA        #IMPLIED
-      ondblclick   CDATA        #IMPLIED
-      onmousedown  CDATA        #IMPLIED
-      onmouseup    CDATA        #IMPLIED
-      onmouseover  CDATA        #IMPLIED
-      onmousemove  CDATA        #IMPLIED
-      onmouseout   CDATA        #IMPLIED
-      onkeypress   CDATA        #IMPLIED
-      onkeydown    CDATA        #IMPLIED
-      onkeyup      CDATA        #IMPLIED" nil) ("xhtml-attribs.module" text "INCLUDE" nil) ("xhtml-attribs.mod" text ("-//W3C//ENTITIES XHTML Common Attributes 1.0//EN" "xhtml-attribs-1.mod" . "/home/darren/lib/DTD/xhtml-modularization/") nil) ("id.attrib" text "id           ID                       #IMPLIED" nil) ("class.attrib" text "class        NMTOKENS                 #IMPLIED" nil) ("title.attrib" text "title        CDATA          #IMPLIED" nil) ("Core.attrib" text "xmlns        CDATA           #FIXED 'http://www.w3.org/1999/xhtml'
-      
-      id           ID                       #IMPLIED
-      class        NMTOKENS                 #IMPLIED
-      title        CDATA          #IMPLIED
-      style        CDATA                    #IMPLIED" nil) ("lang.attrib" text "xml:lang     NMTOKEN  #IMPLIED" nil) ("dir.attrib" text "dir          ( ltr | rtl )            #IMPLIED" nil) ("I18n.attrib" text "dir          ( ltr | rtl )            #IMPLIED
-      xml:lang     NMTOKEN  #IMPLIED" nil) ("Common.extra.attrib" text "" nil) ("Common.attrib" text "xmlns        CDATA           #FIXED 'http://www.w3.org/1999/xhtml'
-      
-      id           ID                       #IMPLIED
-      class        NMTOKENS                 #IMPLIED
-      title        CDATA          #IMPLIED
-      style        CDATA                    #IMPLIED
-      dir          ( ltr | rtl )            #IMPLIED
-      xml:lang     NMTOKEN  #IMPLIED
-      onclick      CDATA        #IMPLIED
-      ondblclick   CDATA        #IMPLIED
-      onmousedown  CDATA        #IMPLIED
-      onmouseup    CDATA        #IMPLIED
-      onmouseover  CDATA        #IMPLIED
-      onmousemove  CDATA        #IMPLIED
-      onmouseout   CDATA        #IMPLIED
-      onkeypress   CDATA        #IMPLIED
-      onkeydown    CDATA        #IMPLIED
-      onkeyup      CDATA        #IMPLIED
-      " nil) ("xhtml-model.redecl" text "" nil) ("xhtml-model.module" text "INCLUDE" nil) ("HeadOpts.mix" text "( script | style | meta
-      | link | object )*" nil) ("Edit.class" text "| ins | del" nil) ("Script.class" text "| script | noscript" nil) ("Misc.extra" text "" nil) ("Misc.class" text "| ins | del
-      | script | noscript
-      " nil) ("InlStruct.class" text "br | span" nil) ("InlPhras.class" text "| em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q" nil) ("InlPres.class" text "| tt | i | b | big
-      | small | sub | sup" nil) ("I18n.class" text "| bdo" nil) ("Anchor.class" text "| a" nil) ("InlSpecial.class" text "| img | map
-      | object" nil) ("InlForm.class" text "| input | select | textarea
-      | label | button" nil) ("Inline.extra" text "" nil) ("Ruby.class" text "| ruby" nil) ("Inline.class" text "br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      " nil) ("InlNoRuby.class" text "br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      " nil) ("NoRuby.content" text "( #PCDATA
-      | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("InlNoAnchor.class" text "br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      " nil) ("InlNoAnchor.mix" text "br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-      " nil) ("Inline.mix" text "br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-      " nil) ("Heading.class" text "h1 | h2 | h3
-      | h4 | h5 | h6" nil) ("List.class" text "ul | ol | dl" nil) ("Table.class" text "| table" nil) ("Form.class" text "| form" nil) ("Fieldset.class" text "| fieldset" nil) ("BlkStruct.class" text "p | div" nil) ("BlkPhras.class" text "| pre | blockquote | address" nil) ("BlkPres.class" text "| hr" nil) ("BlkSpecial.class" text "| table
-      | form
-      | fieldset" nil) ("Block.extra" text "" nil) ("Block.class" text "p | div
-      | pre | blockquote | address
-      | hr
-      | table
-      | form
-      | fieldset
-      " nil) ("Block.mix" text "h1 | h2 | h3
-      | h4 | h5 | h6
-      | ul | ol | dl
-      | p | div
-      | pre | blockquote | address
-      | hr
-      | table
-      | form
-      | fieldset
-      
-      | ins | del
-      | script | noscript
-      " nil) ("Flow.mix" text "h1 | h2 | h3
-      | h4 | h5 | h6
-      | ul | ol | dl
-      | p | div
-      | pre | blockquote | address
-      | hr
-      | table
-      | form
-      | fieldset
-      
-      | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-      " nil) ("xhtml-charent.module" text "INCLUDE" nil) ("xhtml-charent.mod" text ("-//W3C//ENTITIES XHTML Character Entities 1.0//EN" "xhtml-charent-1.mod" . "/home/darren/lib/DTD/xhtml-modularization/") nil) ("xhtml-lat1" text ("-//W3C//ENTITIES Latin 1 for XHTML//EN" "xhtml-lat1.ent" . "/home/darren/lib/DTD/xhtml-modularization/") nil) ("xhtml-symbol" text ("-//W3C//ENTITIES Symbols for XHTML//EN" "xhtml-symbol.ent" . "/home/darren/lib/DTD/xhtml-modularization/") nil) ("xhtml-special" text ("-//W3C//ENTITIES Special for XHTML//EN" "xhtml-special.ent" . "/home/darren/lib/DTD/xhtml-modularization/") nil) ("xhtml-postfw-redecl.module" text "IGNORE" nil) ("xhtml-text.module" text "INCLUDE" nil) ("xhtml-text.mod" text ("-//W3C//ELEMENTS XHTML Text 1.0//EN" "http://www.w3.org/TR/xhtml-modularization/DTD/xhtml-text-1.mod" . "/home/darren/lib/DTD/xhtml11/") nil) ("xhtml-inlstruct.module" text "INCLUDE" nil) ("xhtml-inlstruct.mod" text ("-//W3C//ELEMENTS XHTML Inline Structural 1.0//EN" "xhtml-inlstruct-1.mod" . "/home/darren/lib/DTD/xhtml-modularization/") nil) ("br.element" text "INCLUDE" nil) ("br.content" text "EMPTY" nil) ("br.attlist" text "INCLUDE" nil) ("span.element" text "INCLUDE" nil) ("span.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("span.attlist" text "INCLUDE" nil) ("xhtml-inlphras.module" text "INCLUDE" nil) ("xhtml-inlphras.mod" text ("-//W3C//ELEMENTS XHTML Inline Phrasal 1.0//EN" "xhtml-inlphras-1.mod" . "/home/darren/lib/DTD/xhtml-modularization/") nil) ("abbr.element" text "INCLUDE" nil) ("abbr.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("abbr.attlist" text "INCLUDE" nil) ("acronym.element" text "INCLUDE" nil) ("acronym.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("acronym.attlist" text "INCLUDE" nil) ("cite.element" text "INCLUDE" nil) ("cite.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("cite.attlist" text "INCLUDE" nil) ("code.element" text "INCLUDE" nil) ("code.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("code.attlist" text "INCLUDE" nil) ("dfn.element" text "INCLUDE" nil) ("dfn.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("dfn.attlist" text "INCLUDE" nil) ("em.element" text "INCLUDE" nil) ("em.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("em.attlist" text "INCLUDE" nil) ("kbd.element" text "INCLUDE" nil) ("kbd.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("kbd.attlist" text "INCLUDE" nil) ("q.element" text "INCLUDE" nil) ("q.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("q.attlist" text "INCLUDE" nil) ("samp.element" text "INCLUDE" nil) ("samp.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("samp.attlist" text "INCLUDE" nil) ("strong.element" text "INCLUDE" nil) ("strong.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("strong.attlist" text "INCLUDE" nil) ("var.element" text "INCLUDE" nil) ("var.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("var.attlist" text "INCLUDE" nil) ("xhtml-blkstruct.module" text "INCLUDE" nil) ("xhtml-blkstruct.mod" text ("-//W3C//ELEMENTS XHTML Block Structural 1.0//EN" "xhtml-blkstruct-1.mod" . "/home/darren/lib/DTD/xhtml-modularization/") nil) ("div.element" text "INCLUDE" nil) ("div.content" text "( #PCDATA | h1 | h2 | h3
-      | h4 | h5 | h6
-      | ul | ol | dl
-      | p | div
-      | pre | blockquote | address
-      | hr
-      | table
-      | form
-      | fieldset
-      
-      | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("div.attlist" text "INCLUDE" nil) ("p.element" text "INCLUDE" nil) ("p.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("p.attlist" text "INCLUDE" nil) ("xhtml-blkphras.module" text "INCLUDE" nil) ("xhtml-blkphras.mod" text ("-//W3C//ELEMENTS XHTML Block Phrasal 1.0//EN" "xhtml-blkphras-1.mod" . "/home/darren/lib/DTD/xhtml-modularization/") nil) ("address.element" text "INCLUDE" nil) ("address.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("address.attlist" text "INCLUDE" nil) ("blockquote.element" text "INCLUDE" nil) ("blockquote.content" text "( h1 | h2 | h3
-      | h4 | h5 | h6
-      | ul | ol | dl
-      | p | div
-      | pre | blockquote | address
-      | hr
-      | table
-      | form
-      | fieldset
-      
-      | ins | del
-      | script | noscript
-       )+" nil) ("blockquote.attlist" text "INCLUDE" nil) ("pre.element" text "INCLUDE" nil) ("pre.content" text "( #PCDATA
-      | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b
-      | bdo
-      | a
-      | script | map
-       )*" nil) ("pre.attlist" text "INCLUDE" nil) ("Heading.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("h1.element" text "INCLUDE" nil) ("h1.attlist" text "INCLUDE" nil) ("h2.element" text "INCLUDE" nil) ("h2.attlist" text "INCLUDE" nil) ("h3.element" text "INCLUDE" nil) ("h3.attlist" text "INCLUDE" nil) ("h4.element" text "INCLUDE" nil) ("h4.attlist" text "INCLUDE" nil) ("h5.element" text "INCLUDE" nil) ("h5.attlist" text "INCLUDE" nil) ("h6.element" text "INCLUDE" nil) ("h6.attlist" text "INCLUDE" nil) ("xhtml-hypertext.module" text "INCLUDE" nil) ("xhtml-hypertext.mod" text ("-//W3C//ELEMENTS XHTML Hypertext 1.0//EN" "http://www.w3.org/TR/xhtml-modularization/DTD/xhtml-hypertext-1.mod" . "/home/darren/lib/DTD/xhtml11/") nil) ("a.element" text "INCLUDE" nil) ("a.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("a.attlist" text "INCLUDE" nil) ("xhtml-list.module" text "INCLUDE" nil) ("xhtml-list.mod" text ("-//W3C//ELEMENTS XHTML Lists 1.0//EN" "http://www.w3.org/TR/xhtml-modularization/DTD/xhtml-list-1.mod" . "/home/darren/lib/DTD/xhtml11/") nil) ("dl.element" text "INCLUDE" nil) ("dl.content" text "( dt | dd )+" nil) ("dl.attlist" text "INCLUDE" nil) ("dt.element" text "INCLUDE" nil) ("dt.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("dt.attlist" text "INCLUDE" nil) ("dd.element" text "INCLUDE" nil) ("dd.content" text "( #PCDATA | h1 | h2 | h3
-      | h4 | h5 | h6
-      | ul | ol | dl
-      | p | div
-      | pre | blockquote | address
-      | hr
-      | table
-      | form
-      | fieldset
-      
-      | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("dd.attlist" text "INCLUDE" nil) ("ol.element" text "INCLUDE" nil) ("ol.content" text "( li )+" nil) ("ol.attlist" text "INCLUDE" nil) ("ul.element" text "INCLUDE" nil) ("ul.content" text "( li )+" nil) ("ul.attlist" text "INCLUDE" nil) ("li.element" text "INCLUDE" nil) ("li.content" text "( #PCDATA | h1 | h2 | h3
-      | h4 | h5 | h6
-      | ul | ol | dl
-      | p | div
-      | pre | blockquote | address
-      | hr
-      | table
-      | form
-      | fieldset
-      
-      | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("li.attlist" text "INCLUDE" nil) ("xhtml-edit.module" text "INCLUDE" nil) ("xhtml-edit.mod" text ("-//W3C//ELEMENTS XHTML Editing Elements 1.0//EN" "http://www.w3.org/TR/xhtml-modularization/DTD/xhtml-edit-1.mod" . "/home/darren/lib/DTD/xhtml11/") nil) ("ins.element" text "INCLUDE" nil) ("ins.content" text "( #PCDATA | h1 | h2 | h3
-      | h4 | h5 | h6
-      | ul | ol | dl
-      | p | div
-      | pre | blockquote | address
-      | hr
-      | table
-      | form
-      | fieldset
-      
-      | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("ins.attlist" text "INCLUDE" nil) ("del.element" text "INCLUDE" nil) ("del.content" text "( #PCDATA | h1 | h2 | h3
-      | h4 | h5 | h6
-      | ul | ol | dl
-      | p | div
-      | pre | blockquote | address
-      | hr
-      | table
-      | form
-      | fieldset
-      
-      | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("del.attlist" text "INCLUDE" nil) ("xhtml-bdo.module" text "INCLUDE" nil) ("xhtml-bdo.mod" text ("-//W3C//ELEMENTS XHTML BIDI Override Element 1.0//EN" "http://www.w3.org/TR/xhtml-modularization/DTD/xhtml-bdo-1.mod" . "/home/darren/lib/DTD/xhtml11/") nil) ("bdo.element" text "INCLUDE" nil) ("bdo.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("bdo.attlist" text "INCLUDE" nil) ("Ruby.common.attlists" text "INCLUDE" nil) ("Ruby.common.attrib" text "xmlns        CDATA           #FIXED 'http://www.w3.org/1999/xhtml'
-      
-      id           ID                       #IMPLIED
-      class        NMTOKENS                 #IMPLIED
-      title        CDATA          #IMPLIED
-      style        CDATA                    #IMPLIED
-      dir          ( ltr | rtl )            #IMPLIED
-      xml:lang     NMTOKEN  #IMPLIED
-      onclick      CDATA        #IMPLIED
-      ondblclick   CDATA        #IMPLIED
-      onmousedown  CDATA        #IMPLIED
-      onmouseup    CDATA        #IMPLIED
-      onmouseover  CDATA        #IMPLIED
-      onmousemove  CDATA        #IMPLIED
-      onmouseout   CDATA        #IMPLIED
-      onkeypress   CDATA        #IMPLIED
-      onkeydown    CDATA        #IMPLIED
-      onkeyup      CDATA        #IMPLIED
-      " nil) ("xhtml-ruby.module" text "INCLUDE" nil) ("xhtml-ruby.mod" text ("-//W3C//ELEMENTS XHTML Ruby 1.0//EN" "http://www.w3.org/TR/ruby/xhtml-ruby-1.mod" . "/home/darren/lib/DTD/xhtml11/") nil) ("Ruby.fallback" text "INCLUDE" nil) ("Ruby.fallback.mandatory" text "IGNORE" nil) ("Ruby.complex" text "INCLUDE" nil) ("Ruby.content.simple" text "( rb, ( rt | ( rp, rt, rp ) ) )" nil) ("Ruby.content.complex" text "| ( rbc, rtc, rtc? )" nil) ("ruby.element" text "INCLUDE" nil) ("ruby.content" text "( ( rb, ( rt | ( rp, rt, rp ) ) ) | ( rbc, rtc, rtc? ) )" nil) ("rbc.element" text "INCLUDE" nil) ("rbc.content" text "(rb)+" nil) ("rtc.element" text "INCLUDE" nil) ("rtc.content" text "(rt)+" nil) ("rb.element" text "INCLUDE" nil) ("rb.content" text "( #PCDATA
-      | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("rt.element" text "INCLUDE" nil) ("rt.content" text "( #PCDATA
-      | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("rt.attlist" text "INCLUDE" nil) ("rp.element" text "INCLUDE" nil) ("rp.content" text "( #PCDATA )" nil) ("Ruby.common.attlist" text "INCLUDE" nil) ("Rbc.common.attlist" text "INCLUDE" nil) ("Rtc.common.attlist" text "INCLUDE" nil) ("Rb.common.attlist" text "INCLUDE" nil) ("Rt.common.attlist" text "INCLUDE" nil) ("Rp.common.attlist" text "INCLUDE" nil) ("xhtml-pres.module" text "INCLUDE" nil) ("xhtml-pres.mod" text ("-//W3C//ELEMENTS XHTML Presentation 1.0//EN" "http://www.w3.org/TR/xhtml-modularization/DTD/xhtml-pres-1.mod" . "/home/darren/lib/DTD/xhtml11/") nil) ("xhtml-inlpres.module" text "INCLUDE" nil) ("xhtml-inlpres.mod" text ("-//W3C//ELEMENTS XHTML Inline Presentation 1.0//EN" "xhtml-inlpres-1.mod" . "/home/darren/lib/DTD/xhtml-modularization/") nil) ("b.element" text "INCLUDE" nil) ("b.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("b.attlist" text "INCLUDE" nil) ("big.element" text "INCLUDE" nil) ("big.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("big.attlist" text "INCLUDE" nil) ("i.element" text "INCLUDE" nil) ("i.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("i.attlist" text "INCLUDE" nil) ("small.element" text "INCLUDE" nil) ("small.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("small.attlist" text "INCLUDE" nil) ("sub.element" text "INCLUDE" nil) ("sub.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("sub.attlist" text "INCLUDE" nil) ("sup.element" text "INCLUDE" nil) ("sup.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("sup.attlist" text "INCLUDE" nil) ("tt.element" text "INCLUDE" nil) ("tt.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("tt.attlist" text "INCLUDE" nil) ("xhtml-blkpres.module" text "INCLUDE" nil) ("xhtml-blkpres.mod" text ("-//W3C//ELEMENTS XHTML Block Presentation 1.0//EN" "xhtml-blkpres-1.mod" . "/home/darren/lib/DTD/xhtml-modularization/") nil) ("hr.element" text "INCLUDE" nil) ("hr.content" text "EMPTY" nil) ("hr.attlist" text "INCLUDE" nil) ("xhtml-link.module" text "INCLUDE" nil) ("xhtml-link.mod" text ("-//W3C//ELEMENTS XHTML Link Element 1.0//EN" "http://www.w3.org/TR/xhtml-modularization/DTD/xhtml-link-1.mod" . "/home/darren/lib/DTD/xhtml11/") nil) ("link.element" text "INCLUDE" nil) ("link.content" text "EMPTY" nil) ("link.attlist" text "INCLUDE" nil) ("xhtml-meta.module" text "INCLUDE" nil) ("xhtml-meta.mod" text ("-//W3C//ELEMENTS XHTML Metainformation 1.0//EN" "http://www.w3.org/TR/xhtml-modularization/DTD/xhtml-meta-1.mod" . "/home/darren/lib/DTD/xhtml11/") nil) ("meta.element" text "INCLUDE" nil) ("meta.content" text "EMPTY" nil) ("meta.attlist" text "INCLUDE" nil) ("xhtml-base.module" text "INCLUDE" nil) ("xhtml-base.mod" text ("-//W3C//ELEMENTS XHTML Base Element 1.0//EN" "http://www.w3.org/TR/xhtml-modularization/DTD/xhtml-base-1.mod" . "/home/darren/lib/DTD/xhtml11/") nil) ("base.element" text "INCLUDE" nil) ("base.content" text "EMPTY" nil) ("base.attlist" text "INCLUDE" nil) ("head.content" text "( ( script | style | meta
-      | link | object )*,
-     ( ( title, ( script | style | meta
-      | link | object )*, ( base, ( script | style | meta
-      | link | object )* )? )
-     | ( base, ( script | style | meta
-      | link | object )*, ( title, ( script | style | meta
-      | link | object )* ))))" nil) ("xhtml-script.module" text "INCLUDE" nil) ("xhtml-script.mod" text ("-//W3C//ELEMENTS XHTML Scripting 1.0//EN" "http://www.w3.org/TR/xhtml-modularization/DTD/xhtml-script-1.mod" . "/home/darren/lib/DTD/xhtml11/") nil) ("script.element" text "INCLUDE" nil) ("script.content" text "( #PCDATA )" nil) ("script.attlist" text "INCLUDE" nil) ("noscript.element" text "INCLUDE" nil) ("noscript.content" text "( h1 | h2 | h3
-      | h4 | h5 | h6
-      | ul | ol | dl
-      | p | div
-      | pre | blockquote | address
-      | hr
-      | table
-      | form
-      | fieldset
-      
-      | ins | del
-      | script | noscript
-       )+" nil) ("noscript.attlist" text "INCLUDE" nil) ("xhtml-style.module" text "INCLUDE" nil) ("xhtml-style.mod" text ("-//W3C//ELEMENTS XHTML Style Sheets 1.0//EN" "http://www.w3.org/TR/xhtml-modularization/DTD/xhtml-style-1.mod" . "/home/darren/lib/DTD/xhtml11/") nil) ("style.element" text "INCLUDE" nil) ("style.content" text "( #PCDATA )" nil) ("style.attlist" text "INCLUDE" nil) ("xhtml-image.module" text "INCLUDE" nil) ("xhtml-image.mod" text ("-//W3C//ELEMENTS XHTML Images 1.0//EN" "http://www.w3.org/TR/xhtml-modularization/DTD/xhtml-image-1.mod" . "/home/darren/lib/DTD/xhtml11/") nil) ("img.element" text "INCLUDE" nil) ("img.content" text "EMPTY" nil) ("img.attlist" text "INCLUDE" nil) ("xhtml-csismap.module" text "INCLUDE" nil) ("xhtml-csismap.mod" text ("-//W3C//ELEMENTS XHTML Client-side Image Maps 1.0//EN" "http://www.w3.org/TR/xhtml-modularization/DTD/xhtml-csismap-1.mod" . "/home/darren/lib/DTD/xhtml11/") nil) ("area.element" text "INCLUDE" nil) ("area.content" text "EMPTY" nil) ("Shape.datatype" text "( rect | circle | poly | default )" nil) ("Coords.datatype" text "CDATA" nil) ("area.attlist" text "INCLUDE" nil) ("map.element" text "INCLUDE" nil) ("map.content" text "(( h1 | h2 | h3
-      | h4 | h5 | h6
-      | ul | ol | dl
-      | p | div
-      | pre | blockquote | address
-      | hr
-      | table
-      | form
-      | fieldset
-      
-      | ins | del
-      | script | noscript
-       ) | area )+" nil) ("map.attlist" text "INCLUDE" nil) ("xhtml-ssismap.module" text "INCLUDE" nil) ("xhtml-ssismap.mod" text ("-//W3C//ELEMENTS XHTML Server-side Image Maps 1.0//EN" "http://www.w3.org/TR/xhtml-modularization/DTD/xhtml-ssismap-1.mod" . "/home/darren/lib/DTD/xhtml11/") nil) ("xhtml-param.module" text "INCLUDE" nil) ("xhtml-param.mod" text ("-//W3C//ELEMENTS XHTML Param Element 1.0//EN" "http://www.w3.org/TR/xhtml-modularization/DTD/xhtml-param-1.mod" . "/home/darren/lib/DTD/xhtml11/") nil) ("param.element" text "INCLUDE" nil) ("param.content" text "EMPTY" nil) ("param.attlist" text "INCLUDE" nil) ("xhtml-object.module" text "INCLUDE" nil) ("xhtml-object.mod" text ("-//W3C//ELEMENTS XHTML Embedded Object 1.0//EN" "http://www.w3.org/TR/xhtml-modularization/DTD/xhtml-object-1.mod" . "/home/darren/lib/DTD/xhtml11/") nil) ("object.element" text "INCLUDE" nil) ("object.content" text "( #PCDATA | h1 | h2 | h3
-      | h4 | h5 | h6
-      | ul | ol | dl
-      | p | div
-      | pre | blockquote | address
-      | hr
-      | table
-      | form
-      | fieldset
-      
-      | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       | param )*" nil) ("object.attlist" text "INCLUDE" nil) ("xhtml-table.module" text "INCLUDE" nil) ("xhtml-table.mod" text ("-//W3C//ELEMENTS XHTML Tables 1.0//EN" "http://www.w3.org/TR/xhtml-modularization/DTD/xhtml-table-1.mod" . "/home/darren/lib/DTD/xhtml11/") nil) ("frame.attrib" text "frame        ( void
-                   | above
-                   | below
-                   | hsides
-                   | lhs
-                   | rhs
-                   | vsides
-                   | box
-                   | border )               #IMPLIED" nil) ("rules.attrib" text "rules        ( none
-                   | groups
-                   | rows
-                   | cols
-                   | all )                  #IMPLIED" nil) ("CellHAlign.attrib" text "align        ( left
-                   | center
-                   | right
-                   | justify
-                   | char )                 #IMPLIED
-      char         CDATA     #IMPLIED
-      charoff      CDATA        #IMPLIED" nil) ("CellVAlign.attrib" text "valign       ( top
-                   | middle
-                   | bottom
-                   | baseline )             #IMPLIED" nil) ("scope.attrib" text "scope        ( row
-                   | col
-                   | rowgroup
-                   | colgroup )             #IMPLIED" nil) ("table.element" text "INCLUDE" nil) ("table.content" text "( caption?, ( col* | colgroup* ),
-      (( thead?, tfoot?, tbody+ ) | ( tr+ )))" nil) ("table.attlist" text "INCLUDE" nil) ("caption.element" text "INCLUDE" nil) ("caption.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("caption.attlist" text "INCLUDE" nil) ("thead.element" text "INCLUDE" nil) ("thead.content" text "( tr )+" nil) ("thead.attlist" text "INCLUDE" nil) ("tfoot.element" text "INCLUDE" nil) ("tfoot.content" text "( tr )+" nil) ("tfoot.attlist" text "INCLUDE" nil) ("tbody.element" text "INCLUDE" nil) ("tbody.content" text "( tr )+" nil) ("tbody.attlist" text "INCLUDE" nil) ("colgroup.element" text "INCLUDE" nil) ("colgroup.content" text "( col )*" nil) ("colgroup.attlist" text "INCLUDE" nil) ("col.element" text "INCLUDE" nil) ("col.content" text "EMPTY" nil) ("col.attlist" text "INCLUDE" nil) ("tr.element" text "INCLUDE" nil) ("tr.content" text "( th | td )+" nil) ("tr.attlist" text "INCLUDE" nil) ("th.element" text "INCLUDE" nil) ("th.content" text "( #PCDATA | h1 | h2 | h3
-      | h4 | h5 | h6
-      | ul | ol | dl
-      | p | div
-      | pre | blockquote | address
-      | hr
-      | table
-      | form
-      | fieldset
-      
-      | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("th.attlist" text "INCLUDE" nil) ("td.element" text "INCLUDE" nil) ("td.content" text "( #PCDATA | h1 | h2 | h3
-      | h4 | h5 | h6
-      | ul | ol | dl
-      | p | div
-      | pre | blockquote | address
-      | hr
-      | table
-      | form
-      | fieldset
-      
-      | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("td.attlist" text "INCLUDE" nil) ("xhtml-form.module" text "INCLUDE" nil) ("xhtml-form.mod" text ("-//W3C//ELEMENTS XHTML Forms 1.0//EN" "http://www.w3.org/TR/xhtml-modularization/DTD/xhtml-form-1.mod" . "/home/darren/lib/DTD/xhtml11/") nil) ("BlkNoForm.mix" text "h1 | h2 | h3
-      | h4 | h5 | h6
-      | ul | ol | dl
-      | p | div
-      | pre | blockquote | address
-      | hr
-      | table
-      
-      | ins | del
-      | script | noscript
-      " nil) ("form.element" text "INCLUDE" nil) ("form.content" text "( h1 | h2 | h3
-      | h4 | h5 | h6
-      | ul | ol | dl
-      | p | div
-      | pre | blockquote | address
-      | hr
-      | table
-      
-      | ins | del
-      | script | noscript
-      
-      | fieldset )+" nil) ("form.attlist" text "INCLUDE" nil) ("label.element" text "INCLUDE" nil) ("label.content" text "( #PCDATA
-      | input | select | textarea | button
-      | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | bdo
-      | tt | i | b | big
-      | small | sub | sup
-      | a
-      | img | map
-      | object
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("label.attlist" text "INCLUDE" nil) ("input.element" text "INCLUDE" nil) ("input.content" text "EMPTY" nil) ("input.attlist" text "INCLUDE" nil) ("InputType.class" text "( text | password | checkbox | radio | submit
-      | reset | file | hidden | image | button )" nil) ("select.element" text "INCLUDE" nil) ("select.content" text "( optgroup | option )+" nil) ("select.attlist" text "INCLUDE" nil) ("optgroup.element" text "INCLUDE" nil) ("optgroup.content" text "( option )+" nil) ("optgroup.attlist" text "INCLUDE" nil) ("option.element" text "INCLUDE" nil) ("option.content" text "( #PCDATA )" nil) ("option.attlist" text "INCLUDE" nil) ("textarea.element" text "INCLUDE" nil) ("textarea.content" text "( #PCDATA )" nil) ("textarea.attlist" text "INCLUDE" nil) ("fieldset.element" text "INCLUDE" nil) ("fieldset.content" text "( #PCDATA | legend | h1 | h2 | h3
-      | h4 | h5 | h6
-      | ul | ol | dl
-      | p | div
-      | pre | blockquote | address
-      | hr
-      | table
-      | form
-      | fieldset
-      
-      | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("fieldset.attlist" text "INCLUDE" nil) ("legend.element" text "INCLUDE" nil) ("legend.content" text "( #PCDATA | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | a
-      | img | map
-      | object
-      | input | select | textarea
-      | label | button
-      | ruby
-      
-      | ins | del
-      | script | noscript
-       )*" nil) ("legend.attlist" text "INCLUDE" nil) ("button.element" text "INCLUDE" nil) ("button.content" text "( #PCDATA
-      | h1 | h2 | h3
-      | h4 | h5 | h6
-      | ul | ol | dl
-      | p | div
-      | pre | blockquote | address
-      | hr
-      | table
-      
-      | ins | del
-      | script | noscript
-      
-      | br | span
-      | em | strong | dfn | code
-      | samp | kbd | var | cite
-      | abbr | acronym | q
-      | tt | i | b | big
-      | small | sub | sup
-      | bdo
-      | img | map
-      | object
-       )*" nil) ("button.attlist" text "INCLUDE" nil) ("xhtml-legacy.module" text "IGNORE" nil) ("xhtml-struct.module" text "INCLUDE" nil) ("xhtml-struct.mod" text ("-//W3C//ELEMENTS XHTML Document Structure 1.0//EN" "http://www.w3.org/TR/xhtml-modularization/DTD/xhtml-struct-1.mod" . "/home/darren/lib/DTD/xhtml11/") nil) ("title.element" text "INCLUDE" nil) ("title.content" text "( #PCDATA )" nil) ("title.attlist" text "INCLUDE" nil) ("head.element" text "INCLUDE" nil) ("head.attlist" text "INCLUDE" nil) ("profile.attrib" text "profile      CDATA           ''" nil) ("body.element" text "INCLUDE" nil) ("body.content" text "( h1 | h2 | h3
-      | h4 | h5 | h6
-      | ul | ol | dl
-      | p | div
-      | pre | blockquote | address
-      | hr
-      | table
-      | form
-      | fieldset
-      
-      | ins | del
-      | script | noscript
-       )+" nil) ("body.attlist" text "INCLUDE" nil) ("html.element" text "INCLUDE" nil) ("html.content" text "( head, body )" nil) ("html.attlist" text "INCLUDE" nil) ("XHTML.version.attrib" text "version      CDATA           #FIXED '-//W3C//DTD XHTML 1.1//EN'" nil))
-"html"
-S"optgroup"
-"p"
-"ruby"
-"sub"
-"cite"
-"fieldset"
-"kbd"
-"option"
-"rb"
-"i"
-"strong"
-"big"
-"base"
-"div"
-"noscript"
-"b"
-"acronym"
-"a"
-"thead"
-"h6"
-"textarea"
-"param"
-"h5"
-"h4"
-"map"
-"body"
-"ol"
-"h3"
-"address"
-"h2"
-"button"
-"label"
-"h1"
-"ins"
-"input"
-"colgroup"
-"var"
-"em"
-"dt"
-"style"
-"samp"
-"meta"
-"small"
-"link"
-"dl"
-"object"
-"code"
-"col"
-"caption"
-"head"
-"img"
-"dd"
-"bdo"
-"blockquote"
-"ul"
-"tt"
-"br"
-"dfn"
-"span"
-"select"
-"tr"
-"li"
-"tfoot"
-"table"
-"del"
-"th"
-"sup"
-"td"
-"rt"
-"script"
-"form"
-"title"
-"legend"
-"area"
-"rp"
-"pre"
-"tbody"
-"rbc"
-"hr"
-"rtc"
-"html"
-"q"
-"abbr"
-S(attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("disabled" (name-token-group ("disabled")) IMPLIED) ("label" CDATA REQUIRED)))
- €    (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
- €	 N	 P KEP  E     K    (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€7 F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9  G @ O  6 L   -  7      ! I      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("selected" (name-token-group ("selected")) IMPLIED) ("disabled" (name-token-group ("disabled")) IMPLIED) ("label" CDATA IMPLIED) ("value" CDATA IMPLIED)))
-€     (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€# F A "     < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("href" CDATA REQUIRED)))
-   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€6 F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9  G @ O  6 L   -  7      !      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
- € FA"G@O6L-7!!7-L6O@G"AF   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("onfocus" CDATA IMPLIED) ("onblur" CDATA IMPLIED) ("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("href" CDATA IMPLIED) ("charset" CDATA IMPLIED) ("type" CDATA IMPLIED) ("hreflang" NMTOKEN IMPLIED) ("rel" NMTOKENS IMPLIED) ("rev" NMTOKENS IMPLIED) ("accesskey" CDATA IMPLIED) ("tabindex" CDATA IMPLIED) ("shape" (name-token-group ("rect" "circle" "poly" "default")) (nil "rect")) ("coords" CDATA IMPLIED)))
-€# F A "      < # .  3 5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("align" (name-token-group ("left" "center" "right" "justify" "char")) IMPLIED) ("char" CDATA IMPLIED) ("charoff" CDATA IMPLIED) ("valign" (name-token-group ("top" "middle" "bottom" "baseline")) IMPLIED)))
- € ==   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("onfocus" CDATA IMPLIED) ("onblur" CDATA IMPLIED) ("onselect" CDATA IMPLIED) ("onchange" CDATA IMPLIED) ("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("name" CDATA IMPLIED) ("rows" CDATA REQUIRED) ("cols" CDATA REQUIRED) ("disabled" (name-token-group ("disabled")) IMPLIED) ("readonly" (name-token-group ("readonly")) IMPLIED) ("tabindex" CDATA IMPLIED) ("accesskey" CDATA IMPLIED)))
-€     (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("name" CDATA REQUIRED) ("value" CDATA IMPLIED) ("valuetype" (name-token-group ("data" "ref" "object")) (nil "data")) ("type" CDATA IMPLIED)))
-   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID REQUIRED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
- € JFA"G@O6L-7!!7-L6O@G"AFJ   (attlist (("onload" CDATA IMPLIED) ("onunload" CDATA IMPLIED) ("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
- € FA"G@O6L-7!!7-L6O@G"AF   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
- € >>   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("onfocus" CDATA IMPLIED) ("onblur" CDATA IMPLIED) ("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("name" CDATA IMPLIED) ("value" CDATA IMPLIED) ("type" (name-token-group ("button" "submit" "reset")) (nil "submit")) ("disabled" (name-token-group ("disabled")) IMPLIED) ("tabindex" CDATA IMPLIED) ("accesskey" CDATA IMPLIED)))
-€-.  3 5 C  +   
- 8 R  S  %  ) / :  & ; 9  F A " @ O  6 L   -  7      !      (attlist (("onfocus" CDATA IMPLIED) ("onblur" CDATA IMPLIED) ("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("for" IDREF IMPLIED) ("accesskey" CDATA IMPLIED)))
-€" F A " .  3  C  +   
- 8 5 R  S  %  ) / :  & ; 9   < #      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("cite" CDATA IMPLIED) ("datetime" CDATA IMPLIED)))
-€6 F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9  G @ O  6 L   -  7      !      (attlist (("onfocus" CDATA IMPLIED) ("onblur" CDATA IMPLIED) ("onselect" CDATA IMPLIED) ("onchange" CDATA IMPLIED) ("usemap" IDREF IMPLIED) ("ismap" (name-token-group ("ismap")) IMPLIED) ("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("type" (name-token-group ("text" "password" "checkbox" "radio" "submit" "reset" "file" "hidden" "image" "button")) (nil "text")) ("name" CDATA IMPLIED) ("value" CDATA IMPLIED) ("checked" (name-token-group ("checked")) IMPLIED) ("disabled" (name-token-group ("disabled")) IMPLIED) ("readonly" (name-token-group ("readonly")) IMPLIED) ("size" CDATA IMPLIED) ("maxlength" CDATA IMPLIED) ("src" CDATA IMPLIED) ("alt" CDATA IMPLIED) ("tabindex" CDATA IMPLIED) ("accesskey" CDATA IMPLIED) ("accept" CDATA IMPLIED)))
-   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("span" CDATA (nil "1")) ("width" CDATA IMPLIED) ("align" (name-token-group ("left" "center" "right" "justify" "char")) IMPLIED) ("char" CDATA IMPLIED) ("charoff" CDATA IMPLIED) ("valign" (name-token-group ("top" "middle" "bottom" "baseline")) IMPLIED)))
- €0    (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("title" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("type" CDATA REQUIRED) ("media" CDATA IMPLIED) ("xml:space" (name-token-group ("preserve")) (FIXED "preserve"))))
-€     (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("http-equiv" NMTOKEN IMPLIED) ("name" NMTOKEN IMPLIED) ("content" CDATA REQUIRED) ("scheme" CDATA IMPLIED)))
-   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("charset" CDATA IMPLIED) ("href" CDATA IMPLIED) ("hreflang" NMTOKEN IMPLIED) ("type" CDATA IMPLIED) ("rel" NMTOKENS IMPLIED) ("rev" NMTOKENS IMPLIED) ("media" CDATA IMPLIED)))
-   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
- € 4''4   (attlist (("usemap" IDREF IMPLIED) ("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("declare" (name-token-group ("declare")) IMPLIED) ("classid" CDATA IMPLIED) ("codebase" CDATA IMPLIED) ("data" CDATA IMPLIED) ("type" CDATA IMPLIED) ("codetype" CDATA IMPLIED) ("archive" CDATA IMPLIED) ("standby" CDATA IMPLIED) ("height" CDATA IMPLIED) ("width" CDATA IMPLIED) ("name" CDATA IMPLIED) ("tabindex" CDATA IMPLIED)))
-€7  F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9  G @ O  6 L   -  7      !      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("span" CDATA (nil "1")) ("width" CDATA IMPLIED) ("align" (name-token-group ("left" "center" "right" "justify" "char")) IMPLIED) ("char" CDATA IMPLIED) ("charoff" CDATA IMPLIED) ("valign" (name-token-group ("top" "middle" "bottom" "baseline")) IMPLIED)))
-   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("profile" CDATA (nil ""))))
- €. , * ( F H.,*(F .,*(FH.,*(F .,*(F   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("src" CDATA REQUIRED) ("alt" CDATA REQUIRED) ("longdesc" CDATA IMPLIED) ("height" CDATA IMPLIED) ("width" CDATA IMPLIED) ("usemap" IDREF IMPLIED) ("ismap" (name-token-group ("ismap")) IMPLIED)))
-   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€6 F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9  G @ O  6 L   -  7      !      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) REQUIRED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("cite" CDATA IMPLIED)))
- € FA"G@O6L-7!!7-L6O@G"AF   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
- € >>   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED)))
-   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("onfocus" CDATA IMPLIED) ("onblur" CDATA IMPLIED) ("onchange" CDATA IMPLIED) ("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("name" CDATA IMPLIED) ("size" CDATA IMPLIED) ("multiple" (name-token-group ("multiple")) IMPLIED) ("disabled" (name-token-group ("disabled")) IMPLIED) ("tabindex" CDATA IMPLIED)))
- €    (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("align" (name-token-group ("left" "center" "right" "justify" "char")) IMPLIED) ("char" CDATA IMPLIED) ("charoff" CDATA IMPLIED) ("valign" (name-token-group ("top" "middle" "bottom" "baseline")) IMPLIED)))
- € DBBD   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€6 F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9  G @ O  6 L   -  7      !      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("align" (name-token-group ("left" "center" "right" "justify" "char")) IMPLIED) ("char" CDATA IMPLIED) ("charoff" CDATA IMPLIED) ("valign" (name-token-group ("top" "middle" "bottom" "baseline")) IMPLIED)))
- € ==   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("summary" CDATA IMPLIED) ("width" CDATA IMPLIED) ("border" CDATA IMPLIED) ("frame" (name-token-group ("void" "above" "below" "hsides" "lhs" "rhs" "vsides" "box" "border")) IMPLIED) ("rules" (name-token-group ("none" "groups" "rows" "cols" "all")) IMPLIED) ("cellspacing" CDATA IMPLIED) ("cellpadding" CDATA IMPLIED)))
- €?0$1M=?M M?$0M=?$M=M =   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("cite" CDATA IMPLIED) ("datetime" CDATA IMPLIED)))
-€6 F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9  G @ O  6 L   -  7      !      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("abbr" CDATA IMPLIED) ("axis" CDATA IMPLIED) ("headers" IDREFS IMPLIED) ("scope" (name-token-group ("row" "col" "rowgroup" "colgroup")) IMPLIED) ("rowspan" CDATA (nil "1")) ("colspan" CDATA (nil "1")) ("align" (name-token-group ("left" "center" "right" "justify" "char")) IMPLIED) ("char" CDATA IMPLIED) ("charoff" CDATA IMPLIED) ("valign" (name-token-group ("top" "middle" "bottom" "baseline")) IMPLIED)))
-€6 F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9  G @ O  6 L   -  7      !      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("abbr" CDATA IMPLIED) ("axis" CDATA IMPLIED) ("headers" IDREFS IMPLIED) ("scope" (name-token-group ("row" "col" "rowgroup" "colgroup")) IMPLIED) ("rowspan" CDATA (nil "1")) ("colspan" CDATA (nil "1")) ("align" (name-token-group ("left" "center" "right" "justify" "char")) IMPLIED) ("char" CDATA IMPLIED) ("charoff" CDATA IMPLIED) ("valign" (name-token-group ("top" "middle" "bottom" "baseline")) IMPLIED)))
-€6 F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9  G @ O  6 L   -  7      !      (attlist (("rbspan" CDATA (nil "1")) ("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€# F A "     < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("charset" CDATA IMPLIED) ("type" CDATA REQUIRED) ("src" CDATA IMPLIED) ("defer" (name-token-group ("defer")) IMPLIED) ("xml:space" (name-token-group ("preserve")) (FIXED "preserve"))))
-€     (attlist (("onsubmit" CDATA IMPLIED) ("onreset" CDATA IMPLIED) ("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("action" CDATA REQUIRED) ("method" (name-token-group ("get" "post")) (nil "get")) ("enctype" CDATA (nil "application/x-www-form-urlencoded")) ("accept-charset" CDATA IMPLIED) ("accept" CDATA IMPLIED)))
- € FA"@O6L-7!!7-L6O@"AF   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED)))
-€     (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("accesskey" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("onfocus" CDATA IMPLIED) ("onblur" CDATA IMPLIED) ("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("href" CDATA IMPLIED) ("shape" (name-token-group ("rect" "circle" "poly" "default")) (nil "rect")) ("coords" CDATA IMPLIED) ("nohref" (name-token-group ("nohref")) IMPLIED) ("alt" CDATA REQUIRED) ("tabindex" CDATA IMPLIED) ("accesskey" CDATA IMPLIED)))
-   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€     (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("xml:space" (name-token-group ("preserve")) (FIXED "preserve"))))
-€ F  5  
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("align" (name-token-group ("left" "center" "right" "justify" "char")) IMPLIED) ("char" CDATA IMPLIED) ("charoff" CDATA IMPLIED) ("valign" (name-token-group ("top" "middle" "bottom" "baseline")) IMPLIED)))
- € ==   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
- € 		   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
- € EE   (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("version" CDATA (FIXED "-//W3C//DTD XHTML 1.1//EN")) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED)))
- € 2     (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED) ("cite" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (attlist (("xmlns" CDATA (FIXED "http://www.w3.org/1999/xhtml")) ("id" ID IMPLIED) ("class" NMTOKENS IMPLIED) ("title" CDATA IMPLIED) ("style" CDATA IMPLIED) ("dir" (name-token-group ("ltr" "rtl")) IMPLIED) ("xml:lang" NMTOKEN IMPLIED) ("onclick" CDATA IMPLIED) ("ondblclick" CDATA IMPLIED) ("onmousedown" CDATA IMPLIED) ("onmouseup" CDATA IMPLIED) ("onmouseover" CDATA IMPLIED) ("onmousemove" CDATA IMPLIED) ("onmouseout" CDATA IMPLIED) ("onkeypress" CDATA IMPLIED) ("onkeydown" CDATA IMPLIED) ("onkeyup" CDATA IMPLIED)))
-€$ F A "      < # .  3  5 C  +   
- 8 R  S  %  ) / :  & ; 9      (nil ("nbsp" text " " nil) ("iexcl" text "¡" nil) ("cent" text "¢" nil) ("pound" text "£" nil) ("curren" text "¤" nil) ("yen" text "¥" nil) ("brvbar" text "¦" nil) ("sect" text "§" nil) ("uml" text "¨" nil) ("copy" text "©" nil) ("ordf" text "ª" nil) ("laquo" text "«" nil) ("not" text "¬" nil) ("shy" text "­" nil) ("reg" text "®" nil) ("macr" text "¯" nil) ("deg" text "°" nil) ("plusmn" text "±" nil) ("sup2" text "²" nil) ("sup3" text "³" nil) ("acute" text "´" nil) ("micro" text "µ" nil) ("para" text "¶" nil) ("middot" text "·" nil) ("cedil" text "¸" nil) ("sup1" text "¹" nil) ("ordm" text "º" nil) ("raquo" text "»" nil) ("frac14" text "¼" nil) ("frac12" text "½" nil) ("frac34" text "¾" nil) ("iquest" text "¿" nil) ("Agrave" text "À" nil) ("Aacute" text "Á" nil) ("Acirc" text "Â" nil) ("Atilde" text "Ã" nil) ("Auml" text "Ä" nil) ("Aring" text "Å" nil) ("AElig" text "Æ" nil) ("Ccedil" text "Ç" nil) ("Egrave" text "È" nil) ("Eacute" text "É" nil) ("Ecirc" text "Ê" nil) ("Euml" text "Ë" nil) ("Igrave" text "Ì" nil) ("Iacute" text "Í" nil) ("Icirc" text "Î" nil) ("Iuml" text "Ï" nil) ("ETH" text "Ð" nil) ("Ntilde" text "Ñ" nil) ("Ograve" text "Ò" nil) ("Oacute" text "Ó" nil) ("Ocirc" text "Ô" nil) ("Otilde" text "Õ" nil) ("Ouml" text "Ö" nil) ("times" text "×" nil) ("Oslash" text "Ø" nil) ("Ugrave" text "Ù" nil) ("Uacute" text "Ú" nil) ("Ucirc" text "Û" nil) ("Uuml" text "Ü" nil) ("Yacute" text "Ý" nil) ("THORN" text "Þ" nil) ("szlig" text "ß" nil) ("agrave" text "à" nil) ("aacute" text "á" nil) ("acirc" text "â" nil) ("atilde" text "ã" nil) ("auml" text "ä" nil) ("aring" text "å" nil) ("aelig" text "æ" nil) ("ccedil" text "ç" nil) ("egrave" text "è" nil) ("eacute" text "é" nil) ("ecirc" text "ê" nil) ("euml" text "ë" nil) ("igrave" text "ì" nil) ("iacute" text "í" nil) ("icirc" text "î" nil) ("iuml" text "ï" nil) ("eth" text "ð" nil) ("ntilde" text "ñ" nil) ("ograve" text "ò" nil) ("oacute" text "ó" nil) ("ocirc" text "ô" nil) ("otilde" text "õ" nil) ("ouml" text "ö" nil) ("divide" text "÷" nil) ("oslash" text "ø" nil) ("ugrave" text "ù" nil) ("uacute" text "ú" nil) ("ucirc" text "û" nil) ("uuml" text "ü" nil) ("yacute" text "ý" nil) ("thorn" text "þ" nil) ("yuml" text "ÿ" nil) ("fnof" text "&#402;" nil) ("Alpha" text "&#913;" nil) ("Beta" text "&#914;" nil) ("Gamma" text "&#915;" nil) ("Delta" text "&#916;" nil) ("Epsilon" text "&#917;" nil) ("Zeta" text "&#918;" nil) ("Eta" text "&#919;" nil) ("Theta" text "&#920;" nil) ("Iota" text "&#921;" nil) ("Kappa" text "&#922;" nil) ("Lambda" text "&#923;" nil) ("Mu" text "&#924;" nil) ("Nu" text "&#925;" nil) ("Xi" text "&#926;" nil) ("Omicron" text "&#927;" nil) ("Pi" text "&#928;" nil) ("Rho" text "&#929;" nil) ("Sigma" text "&#931;" nil) ("Tau" text "&#932;" nil) ("Upsilon" text "&#933;" nil) ("Phi" text "&#934;" nil) ("Chi" text "&#935;" nil) ("Psi" text "&#936;" nil) ("Omega" text "&#937;" nil) ("alpha" text "&#945;" nil) ("beta" text "&#946;" nil) ("gamma" text "&#947;" nil) ("delta" text "&#948;" nil) ("epsilon" text "&#949;" nil) ("zeta" text "&#950;" nil) ("eta" text "&#951;" nil) ("theta" text "&#952;" nil) ("iota" text "&#953;" nil) ("kappa" text "&#954;" nil) ("lambda" text "&#955;" nil) ("mu" text "&#956;" nil) ("nu" text "&#957;" nil) ("xi" text "&#958;" nil) ("omicron" text "&#959;" nil) ("pi" text "&#960;" nil) ("rho" text "&#961;" nil) ("sigmaf" text "&#962;" nil) ("sigma" text "&#963;" nil) ("tau" text "&#964;" nil) ("upsilon" text "&#965;" nil) ("phi" text "&#966;" nil) ("chi" text "&#967;" nil) ("psi" text "&#968;" nil) ("omega" text "&#969;" nil) ("thetasym" text "&#977;" nil) ("upsih" text "&#978;" nil) ("piv" text "&#982;" nil) ("bull" text "&#8226;" nil) ("hellip" text "&#8230;" nil) ("prime" text "&#8242;" nil) ("Prime" text "&#8243;" nil) ("oline" text "&#8254;" nil) ("frasl" text "&#8260;" nil) ("weierp" text "&#8472;" nil) ("image" text "&#8465;" nil) ("real" text "&#8476;" nil) ("trade" text "&#8482;" nil) ("alefsym" text "&#8501;" nil) ("larr" text "&#8592;" nil) ("uarr" text "&#8593;" nil) ("rarr" text "&#8594;" nil) ("darr" text "&#8595;" nil) ("harr" text "&#8596;" nil) ("crarr" text "&#8629;" nil) ("lArr" text "&#8656;" nil) ("uArr" text "&#8657;" nil) ("rArr" text "&#8658;" nil) ("dArr" text "&#8659;" nil) ("hArr" text "&#8660;" nil) ("forall" text "&#8704;" nil) ("part" text "&#8706;" nil) ("exist" text "&#8707;" nil) ("empty" text "&#8709;" nil) ("nabla" text "&#8711;" nil) ("isin" text "&#8712;" nil) ("notin" text "&#8713;" nil) ("ni" text "&#8715;" nil) ("prod" text "&#8719;" nil) ("sum" text "&#8721;" nil) ("minus" text "&#8722;" nil) ("lowast" text "&#8727;" nil) ("radic" text "&#8730;" nil) ("prop" text "&#8733;" nil) ("infin" text "&#8734;" nil) ("ang" text "&#8736;" nil) ("and" text "&#8743;" nil) ("or" text "&#8744;" nil) ("cap" text "&#8745;" nil) ("cup" text "&#8746;" nil) ("int" text "&#8747;" nil) ("there4" text "&#8756;" nil) ("sim" text "&#8764;" nil) ("cong" text "&#8773;" nil) ("asymp" text "&#8776;" nil) ("ne" text "&#8800;" nil) ("equiv" text "&#8801;" nil) ("le" text "&#8804;" nil) ("ge" text "&#8805;" nil) ("sub" text "&#8834;" nil) ("sup" text "&#8835;" nil) ("nsub" text "&#8836;" nil) ("sube" text "&#8838;" nil) ("supe" text "&#8839;" nil) ("oplus" text "&#8853;" nil) ("otimes" text "&#8855;" nil) ("perp" text "&#8869;" nil) ("sdot" text "&#8901;" nil) ("lceil" text "&#8968;" nil) ("rceil" text "&#8969;" nil) ("lfloor" text "&#8970;" nil) ("rfloor" text "&#8971;" nil) ("lang" text "&#9001;" nil) ("rang" text "&#9002;" nil) ("loz" text "&#9674;" nil) ("spades" text "&#9824;" nil) ("clubs" text "&#9827;" nil) ("hearts" text "&#9829;" nil) ("diams" text "&#9830;" nil) ("quot" text "\"" nil) ("amp" text "&#38;" nil) ("lt" text "&#60;" nil) ("gt" text ">" nil) ("apos" text "'" nil) ("OElig" text "&#338;" nil) ("oelig" text "&#339;" nil) ("Scaron" text "&#352;" nil) ("scaron" text "&#353;" nil) ("Yuml" text "&#376;" nil) ("circ" text "&#710;" nil) ("tilde" text "&#732;" nil) ("ensp" text "&#8194;" nil) ("emsp" text "&#8195;" nil) ("thinsp" text "&#8201;" nil) ("zwnj" text "&#8204;" nil) ("zwj" text "&#8205;" nil) ("lrm" text "&#8206;" nil) ("rlm" text "&#8207;" nil) ("ndash" text "&#8211;" nil) ("mdash" text "&#8212;" nil) ("lsquo" text "&#8216;" nil) ("rsquo" text "&#8217;" nil) ("sbquo" text "&#8218;" nil) ("ldquo" text "&#8220;" nil) ("rdquo" text "&#8221;" nil) ("bdquo" text "&#8222;" nil) ("dagger" text "&#8224;" nil) ("Dagger" text "&#8225;" nil) ("permil" text "&#8240;" nil) ("lsaquo" text "&#8249;" nil) ("rsaquo" text "&#8250;" nil) ("euro" text "&#8364;" nil))
-(nil)
-nil

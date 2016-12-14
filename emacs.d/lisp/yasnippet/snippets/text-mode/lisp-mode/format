@@ -1,3 +1,0 @@
-#name : (format t string)
-# --
-(format t ${1:string})

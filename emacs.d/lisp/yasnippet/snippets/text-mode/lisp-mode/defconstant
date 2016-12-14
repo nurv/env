@@ -1,3 +1,0 @@
-#name : (defconstant name value doc)
-# --
-(defconstant ${1:name} ${2:value} ${2:doc})

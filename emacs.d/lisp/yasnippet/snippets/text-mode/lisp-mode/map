@@ -1,3 +1,0 @@
-#name : (maplist lambda list)
-# --
-(maplist ${1:lambda} ${2:list})

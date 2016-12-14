@@ -1,0 +1,91 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/nurv/git/unbabel/unbabel-zendesk-dashboard/uzd/" . "uzd/")
+ ("/Users/nurv/git/unbabel/unbabel-zendesk-dashboard/" . "uzd/")
+ ("/Users/nurv/git/unbabel/unbabel-zendesk/tests/" . "api/")
+ ("/Users/nurv/git/unbabel/unbabel-zendesk/unbabel_zendesk/apps/zendesk/" . "models/")
+ ("/Users/nurv/git/unbabel/unbabel-zendesk/unbabel_zendesk/apps/" . "zendesk/")
+ ("/Users/nurv/git/unbabel/unbabel-zendesk/unbabel_zendesk/" . "utils/")
+ ("/Users/nurv/git/unbabel/unbabel-zendesk/" . "unbabel_zendesk/")
+ ("/Users/nurv/git/unbabel/" . "unbabel-zendesk-dashboard/")
+ ("/Users/nurv/git/" . "unbabel/")
+ ("/Users/nurv/" . "git/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/nurv/"
+ "/Users/nurv/git/unbabel/unbabel-zendesk-dashboard/uzd/uzd/"
+ "/Users/nurv/git/unbabel/unbabel-zendesk-dashboard/uzd/templates/"
+ "/Users/nurv/git/unbabel/unbabel-zendesk-dashboard/uzd/dashboard/"
+ "/Users/nurv/git/unbabel/unbabel-zendesk/unbabel_zendesk/apps/zendesk/models/"
+ "/Users/nurv/git/unbabel/unbabel-zendesk/tests/api/"
+ "/Users/nurv/.env/"
+ "/Users/nurv/git/diamondback/"
+ "/Users/nurv/git/unbabel/unbabel-zendesk/"
+ "/Users/nurv/git/unbabel/unbabel-zendesk/unbabel_zendesk/apps/zendesk/views/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "zendesk_web.err.log.2"
+ "urls.py"
+ "index.html"
+ "settings.py"
+ "views.py"
+ "ticket.py"
+ "ticket_translation.py"
+ "test_ticket_translation.py"
+ "emacs"
+ "script.py"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/nurv/" (22602 34625 0 0) "zendesk_web.err.log.2" "XXXX/" "xtract.py" "vx" "VirtualBox VMs/" "venv/" "twat/" "tokens.txt" "tokens" "title.png" "teste2.py" "test.png" "t.tgz" "t.sh" "t.py" "t.pl" "t" "ssh2psck8.go" "ssh2psck8" "sewiki.iai.uni-bonn.de/" "script.sh" "scheduler.py" "respostas.txt~" "respostas.txt" "PycharmProjects/" "Public/" "pubkey" "polyagent_2016_10_19_dump/" "Pictures/" "output.xml" "org.cs3.prolog.connector_3.1.2.201603251848/" "org.cs3.jtransformer_4.1.0.201603251849/" "newTokens.txt" "network.sh" "netwatch.py" "Music/" "mupi/" "Movies/" "logver/" "logofe.gif" "Library/" "libjpl.dylib" "ison.sh" "IdeaProjects/" "id_rsa.pub" "git/" "foo/" "emacsdir-old/" "dump.rdb" "dump/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "depu/" "db/" "cert" "c" "bin/" "b" "Applications/" "app25821198/" "AndroidStudioProjects/" "abranhos/" "abcl/" "a.py" "a" ".zshrc.old" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-lucy-5.2" ".Xauthority" ".wget-hsts" ".viminfo" ".Trash/" ".swipl-dir-history/" ".subversion/" ".ssh/" ".sqlite_history" ".sonar/" ".slime-history.eld" ".slime/" ".serverauth.32240" ".screenrc.old" ".screenrc" ".rnd" ".rediscli_history" ".python_history" ".pylint.d/" ".psql_history" ".plexht/" ".pip/" ".oracle_jre_usage/" ".oh-my-zsh/" ".nylas/" ".npm/" ".node-gyp/" ".mysql_history" ".my.cnf" ".mongorc.js" ".matplotlib/" ".m2/" ".local/" ".lesshst" ".ipython/" ".IntelliJIdea14/" ".idea/" ".hyper_plugins/" ".hyper.js~" ".hyper.js" ".gradle/" ".gnupg/" ".gitkraken/" ".gitconfig.old" ".gitconfig" ".gitbook/" ".gem/" ".env-old/" ".env/" ".emacs.old" ".emacs.d.old/" ".emacs.d/" ".emacs" ".electron/" ".dvdcss/" ".DS_Store" ".dropbox/" ".docker/" ".dbshell" ".cups/" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".cache/" ".bashrc.old" ".bashrc" ".bash_sessions/" ".bash_profile.pysave" ".bash_profile.old" ".bash_profile" ".bash_history" ".babel.json" ".aws/" ".atom/" ".ansible/" ".android/" ".(null).padl" ".#t.txt" "../" "./")
+
+ ("/Users/nurv/git/unbabel/unbabel-zendesk-dashboard/uzd/uzd/" (22590 40130 0 0) "wsgi.pyc" "wsgi.py" "urls.pyc" "urls.py" "settings.py~" "settings.pyc" "settings.py" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Users/nurv/git/unbabel/unbabel-zendesk-dashboard/uzd/" (22590 40140 0 0) "uzd/" "templates/" "manage.py" "db.sqlite3" "dashboard/" "../" "./")
+
+ ("/Users/nurv/git/unbabel/unbabel-zendesk-dashboard/uzd/templates/" (22590 40072 0 0) "index.html~" "index.html" "../" "./")
+
+ ("/Users/nurv/git/unbabel/unbabel-zendesk-dashboard/uzd/dashboard/" (22590 39919 0 0) "views.py" "tests.py" "models.py" "migrations/" "apps.py" "admin.py" "__init__.py" ".#views.py" "#views.py#" "../" "./")
+
+ ("/Users/nurv/git/unbabel/unbabel-zendesk-dashboard/" (22590 39672 0 0) "uzd/" "pip-selfcheck.json" "lib/" "include/" "bin/" ".Python" "../" "./")
+
+ ("/Users/nurv/git/unbabel/unbabel-zendesk/unbabel_zendesk/apps/zendesk/views/" (22588 27422 0 0) "ticket_translation.pyc" "ticket_translation.py" "organization.pyc" "organization.py" "operator.pyc" "operator.py" "onboarding.pyc" "onboarding.py" "admin.pyc" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Users/nurv/git/unbabel/unbabel-zendesk/tests/api/" (22588 26604 0 0) "test_zendesk.pyc" "test_zendesk.py" "test_ticket_translation.pyc" "test_ticket_translation.py" "test_onboarding.pyc" "test_onboarding.py" "test_oauth.pyc" "__init__.pyc" "__init__.py" ".DS_Store" "../" "./")
+
+ ("/Users/nurv/git/unbabel/unbabel-zendesk/unbabel_zendesk/apps/zendesk/models/" (22589 26259 0 0) "ticket_translation.pyc" "ticket_translation.py" "ticket_state.pyc" "ticket_state.py" "ticket.pyc" "ticket.py" "organization.pyc" "organization.py" "language.pyc" "language.py" "agent.pyc" "agent.py" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Users/nurv/git/unbabel/" (22590 39527 0 0) "zendesk.sublime-workspace" "zendesk.sublime-project" "zendesk-app-testing/" "zendesk-app/" "unbabel_wiki/" "unbabel_django/" "unbabel-zendesk-dashboard/" "unbabel-zendesk/" "unbabel-pollyagent/" "unbabel-ops/" "unbabel-id/" "sonar-scanner-2.8.zip" "sonar-scanner-2.8/" "pollyagent.sublime-workspace" "pollyagent.sublime-project" "envs.sh" ".DS_Store" "../" "./")
+
+ ("/Users/nurv/git/unbabel/unbabel-zendesk/unbabel_zendesk/utils/" (22588 7551 0 0) "xliff_utils.pyc" "xliff_utils.py" "view_utils.pyc" "view_utils.py" "unbabel_zendesk_api.pyc" "unbabel_zendesk_api.py" "mongo_connection.pyc" "mongo_connection.py" "google_translate.pyc" "google_translate.py" "decorators.pyc" "decorators.py" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Users/nurv/git/unbabel/unbabel-zendesk/unbabel_zendesk/apps/" (22588 782 0 0) "zendesk/" "zadmin/" "backends.pyc" "backends.py" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Users/nurv/git/unbabel/unbabel-zendesk/unbabel_zendesk/" (22588 8905 0 0) "wsgi.pyc" "wsgi.py" "utils/" "urls.pyc" "urls.py" "templatetags/" "templates/" "static/" "setup.cfg" "settings_utils.pyc" "settings_utils.py" "settings_tests.pyc" "settings_tests.py" "settings.pyc" "settings.py" "management/" "apps/" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Users/nurv/git/unbabel/unbabel-zendesk/" (22588 1632 0 0) "unbabel_zendesk/" "tests/" "test-regexps.pyc" "test-regexps.py" "runtime.txt" "requirements.txt" "README.md" "Procfile" "manage.pyc" "manage.py" "locale/" "data/" ".style.yapf" ".gitignore" ".git/" ".env~/" ".env" ".DS_Store" ".coverage" "../" "./")
+
+ ("/Users/nurv/git/unbabel/unbabel-zendesk/tests/" (22584 28825 0 0) "utils.pyc" "utils.py" "test_organization.pyc" "test_agent.pyc" "models/" "mock_unbabel.py" "api/" "__init__.pyc" "__init__.py" ".DS_Store" "../" "./")
+
+ ("/Users/nurv/.env/" (22587 62246 0 0) "zshrc" "XML/" "vars.sh" "screenrc" "README.md" "LICENSE" "init.sh" "gitconfig" "getpom.pl" "emacs.d/" "emacs" "common.sh" "bashrc" ".git/" "../" "./")
+
+ ("/Users/nurv/git/diamondback/" (22586 19265 0 0) "setup.cfg~" "setup.cfg" "script.py~" "script.py" "requirements.txt~" "requirements.txt" ".style.yapf" ".env/" "../" "./")
+
+ ("/Users/" (22565 45888 0 0) "Shared/" "nurv/" "Guest/" ".localized" "../" "./")
+
+ ("/Users/nurv/git/unbabel/unbabel-zendesk/unbabel_zendesk/apps/zendesk/" (22584 28825 0 0) "views/" "urls/" "models/" "mail.pyc" "mail.py" "__init__.pyc" "__init__.py" "../" "./")
+
+ ("/Users/nurv/git/" (22586 9274 0 0) "yapf-pycharm/" "unbabel/" "udacity-google-deep-learning-tensorflow/" "tomcat/" "thinthread-web/" "thinthread-js/" "thinthread-cli/" "thinthread/" "tese-joao/" "Terasology/" "techscav/" "Tarmak/" "symja_android_library/" "streamer/" "StellarWindInterface/" "stellar-wind-network/" "sockjs-servlet/" "slime/" "simplenlg/" "secsim/" "screencat/" "ScienceCore/" "Samaritan/" "rache/" "prologEng/" "prolog/" "PopcornTimeTV/" "Pong/" "PixelSorting/" "pdf.js-hypothes.is/" "oliver/" "nurv/" "northern-lights/" "northen-lights/" "mldht/" "minify-maven-plugin/" "metatest/" "metamorphosis-engine/" "machine-xmpp/" "machine-store/" "machine/" "lxdynamics/" "lithosphere/" "kingdom/" "Kademlia/" "k.tgz" "k/" "jiprolog/" "jdtplgen/" "javassist/" "intigos.tgz" "intigos/" "int/" "Hugs/" "html5-videoEditor/" "generator/" "fernflower/" "fenixedu.github.io/" "fenixedu-treasury/" "fenixedu-spaces/" "fenixedu-learning/" "fenixedu-ist/" "fenixedu-cms-begging/" "fenixedu-cms/" "fenixedu-canvas-theme/" "fenixedu-canvas/" "fenixedu-academic/" "electron-quick-start/" "eclipse.jdt.core/" "duktape/" "dokku-alt-manager/" "django-vcs/" "diamondback/" "demo/" "community/" "cl-utils/" "campicloud-site/" "campicloud/" "bennu-websockets/" "bennu-webapp34/" "bennu-social/" "bennu-modular-rendering/" "bennu/" "avatar.js/" "avatar-js~libuv-java/" "ash/" "apprtc-ios/" "apprtc/" "abcl/" ".DS_Store" "../" "./")
+
+ ("/Users/nurv/sewiki.iai.uni-bonn.de/" (22475 28052 0 0) "robots.txt.orig" "robots.txt.html" "public-downloads/" "public/" ".DS_Store" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

@@ -1,3 +1,0 @@
-#name : (defvar name value doc)
-# --
-(defvar ${1:name} ${2:value} ${2:doc})
