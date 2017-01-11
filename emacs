@@ -7,6 +7,7 @@
 ;; Author: Artur Ventura
 ;;
 
+;;; Code:
 (setq user-full-name "Artur Ventura")
 (setq user-mail-address "artur.ventura@gmail.com")
 
@@ -106,3 +107,9 @@
 ;; 				     (get-current-buffer-pylint))))
 ;; (add-hook 'flycheck-before-syntax-check-hook
 ;; 	  #'set-flychecker-executables 'local)
+
+(setq mac-option-modifier nil
+      mac-command-modifier 'meta
+      x-select-enable-clipboard t)
+
+(electric-pair-mode)
