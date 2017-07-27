@@ -1,0 +1,5 @@
+# This was cloned from a TextMate bundle for yasnippet.
+# --
+class ${1:CLASSNAME}TemplateView(TemplateView):
+    template_name = '${2:TEMPLATE_NAME}'
+    $0

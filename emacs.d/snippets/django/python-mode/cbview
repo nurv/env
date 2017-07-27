@@ -1,0 +1,11 @@
+# This was cloned from a TextMate bundle for yasnippet.
+# --
+class ${1:CLASSNAME}View(View):
+    template_name = '${2:TEMPLATE_NAME}'
+
+    def get(self, request):
+        pass
+
+    def post(self, request):
+        pass
+    $0

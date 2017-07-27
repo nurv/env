@@ -1,0 +1,9 @@
+# This was cloned from a TextMate bundle for yasnippet.
+# --
+class ${1:MODELNAME}DetailView(DetailView):
+    model = ${1:MODELNAME}
+    slug_field = '${2:SLUG_FIELD}'
+    slug_url_kwarg = '${3:SLUG_URL_KWARG}'
+    success_url = '${4:SUCCESS_URL}'
+    template_name = '${5:TEMPLATE_NAME}'
+    $0

@@ -1,0 +1,6 @@
+# This was cloned from a TextMate bundle for yasnippet.
+# --
+{% with ${1:var} as ${2:name} %}
+    {{ ${3:$2} }}
+{% endwith %}
+$0

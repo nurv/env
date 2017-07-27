@@ -1,0 +1,6 @@
+# This was cloned from a TextMate bundle for yasnippet.
+# --
+{% spaceless %}
+    $1
+{% endspaceless %}
+$0

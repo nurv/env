@@ -1,0 +1,9 @@
+# This was cloned from a TextMate bundle for yasnippet.
+# --
+class ${1:MODELNAME}ListView(ListView):
+    context_object_name = '${2:CONTEXT_OBJECT_NAME}'
+    model = ${1:MODELNAME}
+    page_kwarg = 'page'
+    paginate_by = $3
+    template_name = '${4:TEMPLATE_NAME}'
+    $0

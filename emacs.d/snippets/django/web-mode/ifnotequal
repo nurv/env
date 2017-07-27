@@ -1,0 +1,6 @@
+# This was cloned from a TextMate bundle for yasnippet.
+# --
+{% ifnotequal $1 $2 %}
+    $3
+{% endifnotequal %}
+$0

@@ -1,0 +1,8 @@
+# This was cloned from a TextMate bundle for yasnippet.
+# --
+class ${1:MODELNAME}CreateView(CreateView):
+    model = ${1:MODELNAME}
+    form_class = ${2:FORM_CLASS}
+    success_url = '${3:SUCCESS_URL}'
+    template_name = '${4:TEMPLATE_NAME}'
+    $0

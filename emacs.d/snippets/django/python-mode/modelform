@@ -1,0 +1,15 @@
+# This was cloned from a TextMate bundle for yasnippet.
+# --
+class ${1:FORMNAME}Form(forms.ModelForm):
+    ${3:# TODO: Define other fields here}
+    $0
+    class Meta:
+        model = $1
+        fields = [$2]
+
+    def __init__(self, *args, **kwargs):
+        super($1Form, self).__init__(*args, **kwargs)
+
+    def clean(self):
+        cleaned_data = super($1Form, self).clean()
+        return cleaned_data

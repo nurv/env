@@ -1,0 +1,6 @@
+# This was cloned from a TextMate bundle for yasnippet.
+# --
+class ${1:MODELNAME}UpdateView(UpdateView):
+    model = ${1:MODELNAME}
+    template_name = '${2:TEMPLATE_NAME}'
+    $0

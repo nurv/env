@@ -60,7 +60,7 @@ alias vlc='open -a VLC'
 source "$HOME/.env/vars.sh"
 
 if [[ $PLATFORM == "darwin" ]]; then
-	export PATH="$PATH:/usr/local/mysql/bin/"
+	export PATH="$PATH:/usr/local/bin/:/usr/local/mysql/bin/"
 	export JAVA_HOME=$(/usr/libexec/java_home)
 fi
 
