@@ -2,6 +2,9 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/nurv/git/unbabel/messages/core/templates/" . "admin/")
+ ("/Users/nurv/git/unbabel/messages/core/" . "templates/")
+ ("/Users/nurv/.env/" . "emacs.d/")
  ("/Users/nurv/extract/" . "python-mode/")
  ("/Users/nurv/.emacs.d/snippets/django/" . "python-mode/")
  ("/Users/nurv/.emacs.d/snippets/" . "django/")
@@ -18,7 +21,7 @@
  ("/Users/nurv/git/unbabel/messages/interface/templates/interface/" . "admin/")
  ("/Users/nurv/git/unbabel/messages/interface/templates/" . "interface/")
  ("/Users/" . "nurv/")
- ("/" . "tmp/")
+ ("/" . "Users/")
  ("/Users/nurv/git/unbabel/messages/" . "interface/")
  ("/Users/nurv/git/rogue/" . "rogue/")
  ("/Users/nurv/git/unbabel/unbabel-zendesk-dashboard/uzd/" . "uzd/")
@@ -35,14 +38,18 @@
 
 ;; ----- ido-work-directory-list -----
 (
- "/Users/nurv/git/unbabel/messages/interface/templates/interface/admin/thread/"
+ "/Users/nurv/git/unbabel/messages/interface/"
  "/Users/nurv/"
+ "/Users/nurv/git/unbabel/messages/core/"
+ "/Users/nurv/git/unbabel/messages/core/templates/admin/"
+ "/Users/nurv/.env/emacs.d/"
+ "/Users/nurv/.env/"
+ "/Users/nurv/.emacs.d/"
+ "/Users/nurv/git/unbabel/messages/interface/templates/interface/admin/thread/"
  "/Users/nurv/extract/python-mode/"
  "/Users/nurv/.emacs.d/snippets/django/python-mode/"
  "/Users/nurv/extract/"
- "/Users/nurv/git/unbabel/messages/interface/"
  "/Users/nurv/git/unbabel/messages/zendesk/"
- "/Users/nurv/git/unbabel/messages/core/"
  "/Users/nurv/git/unbabel/messages/zendesk/views/"
  "/Users/nurv/git/unbabel/messages/zendesk/templates/zendesk/admin/"
  "/Users/nurv/git/unbabel/messages/interface/templates/interface/admin/organization/"
@@ -67,40 +74,65 @@
  "/Users/nurv/git/unbabel/unbabel-zendesk-dashboard/uzd/dashboard/"
  "/Users/nurv/git/unbabel/unbabel-zendesk/unbabel_zendesk/apps/zendesk/models/"
  "/Users/nurv/git/unbabel/unbabel-zendesk/tests/api/"
- "/Users/nurv/.env/"
  "/Users/nurv/git/diamondback/"
  "/Users/nurv/git/unbabel/unbabel-zendesk/unbabel_zendesk/apps/zendesk/views/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "detail.html"
+ "views.py"
+ "d.py"
  ".emacs"
- "#a.html#"
+ "c.py"
  "a.py"
- "a.js"
- "pdb"
- "pudb"
- "fchoice"
- "cbview"
- "boolean"
+ "language.html"
+ "custom.el"
+ "emacs"
+ "b.py"
+ "detail.html"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/Users/nurv/" (22910 25778 0 0) "XNS/" "x.txt" "VirtualBox VMs/" "trans" "text" "test.html" "t.py" "t.json" "t.csv" "stories.js" "script.py" "result.json" "resources.arsc" "requests.txt" "remote.txt" "PycharmProjects/" "Public/" "Proust/" "programmingclasses/" "Pictures/" "payload" "owasp_zap_root_ca.cer" "output.csv" "output" "out.csv" "old-dump.py" "nginx-access.log" "Music/" "Movies/" "mongod.log" "migrations/" "logs.tgz" "Library/" "input.py" "index.js~" "index.js" "index.hs" "hello.py" "git/" "gen_from_zendesk.py" "freshdeskmigrations/" "foo" "extract/" "example/" "emacstemp/" "dump.rdb" "dump.html" "dump" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "db/" "d.txt" "d.py" "csvs.zip" "csv" "construct.py" "billing-staging.env" "b.py~" "b.py" "Applications/" "ansible.cfg" "a.py~" "a.py" "a.js" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-Anna-5.2" ".w3m/" ".viminfo" ".v8flags.5.5.372.41.nurv.json" ".Trash/" ".tmp/" ".ssh/" ".sqlite_history" ".screenrc.old" ".screenrc" ".python_history" ".psql_history" ".pip/" ".oracle_jre_usage/" ".oh-my-zsh/" ".nylas-mail/" ".npm/" ".node_repl_history" ".node-gyp/" ".mongorc.js" ".matplotlib/" ".local/" ".lesshst" ".irssi/" ".ipython/" ".hyper_plugins/" ".hyper.js" ".gsutil/" ".google_libcloud_auth.zendesk-160711" ".gnupg/" ".gitconfig.old" ".gitconfig" ".gem/" ".ethash/" ".env/" ".emacs.old" ".emacs.d.old/" ".emacs.d/" ".emacs" ".DS_Store" ".dropbox/" ".dbshell" ".cups/" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".aws/" ".atom/" ".ansible_galaxy" ".ansible/" "#b.py#" "#a.html#~" "#a.html#" "#!Users!nurv!c.py#" "../" "./")
+
+ ("/ssh:ubuntu@54.234.250.204:/" (ftp . 417070.8545153705) "initrd.img" "sys/" "run/" "tmp/" "vmlinuz" "boot/" "lost+found/" "mnt/" "dev/" "proc/" "var/" "./" "initrd.img.old" "bin/" "lib64/" "root/" "usr/" "lib/" "srv/" "home/" "vmlinuz.old" "etc/" "opt/" "sbin/" "pg_stat_tmp/" "media/" "snap/" "../")
+
+ ("/ssh:ubuntu@54.234.250.204:/home/" (ftp . 417070.8544109253) "./" "../" "ubuntu/")
+
+ ("/ssh:ubuntu@54.234.250.204:/home/ubuntu/" (ftp . 417070.854305657) ".ipython/" ".config/" ".cache/" ".viminfo" "redis-dump/" ".ssh/" ".bashrc" ".bash_history" "messages/" ".cloud-locale-test.skip" ".bash_logout" ".sudo_as_admin_successful" "./" "log/" "t.py" ".lesshst" "ngrok/" "certbot-auto" ".profile" ".nano/" ".wget-hsts" "../" ".ansible/" "redis-log/")
+
+ ("/ssh:ubuntu@54.234.250.204:/home/ubuntu/messages/" (ftp . 417070.8496772064) "setup.cfg" "env.py" "manage.py" "requirements.txt" ".git/" "zendesk/" ".style.yapf" "core/" ".gitignore" "uwsgi.ini" "messages/" "freshdesk_unbabel/" "env.pyc" "./" "dynamic/" "docs/" ".coveragerc" "zendesk-migration.py" "README.md" "celerybeat-schedule" "../" "interface/" ".env")
+
+ ("/Users/nurv/.env/" (22910 25123 0 0) "zshrc" "XML/" "vars.sh" "screenrc" "README.md" "LICENSE" "init.sh" "gitconfig" "getpom.pl" "emacs~" "emacs.d/" "emacs" "db.sqlite3" "common.sh" "bashrc" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/nurv/.emacs.d/" (22910 25025 0 0) "var/" "tramp" "snippets/" "recentf" "projectile-bookmarks.eld" "network-security.data" "ido.last~" "ido.last" "etc/" "elpa/" "custom.el~" "custom.el" "auto-save-list/" "anaconda-mode/" "ac-comphist.dat" ".python-environments/" ".mc-lists.el" ".DS_Store" "../" "./")
+
+ ("/tmp/" (22910 10295 0 0) "wifi-07-30-2017__19:40:55.log" "wifi-07-30-2017__16:52:06.log" "wifi-07-30-2017__16:15:28.log" "wifi-07-30-2017__15:19:05.log" "wifi-07-30-2017__15:19:04.log" "wifi-07-29-2017__10:03:53.log" "messages.env" "KSOutOfProcessFetcher.vogtBrFZHf/" "KSInstallAction.BrATCEOrVb/" "KSDownloadAction.yUYBoERDSH/" "dump.js" "documents.env" "com.apple.launchd.jM8UkI5vAm/" "com.apple.launchd.1Sbm3580kH/" "Atom Crashes/" "ansible-digital_ocean.cache" ".s.PGSQL.5432.lock" ".s.PGSQL.5432" ".keystone_install_lock" ".env_template" "../" "./")
+
+ ("/Users/nurv/.env/emacs.d/" (22910 4809 0 0) "var/" "tramp" "snippets/" "recentf" "projectile-bookmarks.eld" "network-security.data" "ido.last~" "ido.last" "etc/" "elpa/" "custom.el~" "custom.el" "auto-save-list/" "anaconda-mode/" "ac-comphist.dat" ".python-environments/" ".mc-lists.el" ".DS_Store" "../" "./")
+
+ ("/Users/nurv/git/unbabel/messages/core/" (22909 11632 0 0) "views.pyc" "views.py" "utils.py~" "utils.pyc" "utils.py" "urls.pyc" "urls.py" "tests.pyc" "tests.py" "templates/" "tasks.pyc" "tasks.py" "static/" "signals.pyc" "signals.py" "services.pyc" "services.py" "serializer.pyc" "serializer.py" "permissions.py~" "permissions.pyc" "permissions.py" "models.pyc" "models.py" "migrations/" "management/" "integrations.pyc" "integrations.py" "freshdesk/" "forms.pyc" "forms.py" "fixtures/" "dynamicTags.pyc" "db.sqlite3" "backends.pyc" "backends.py" "authentication.py~" "authentication.pyc" "authentication.py" "apps.pyc" "apps.py" "apiUrls.pyc" "apiUrls.py" "api.pyc" "api.py" "admin.pyc" "admin.py" "__pycache__/" "__init__.pyc" "__init__.py" "#tasks.py#" "#permissions.py#" "../" "./")
+
+ ("/Users/nurv/git/unbabel/messages/core/templates/admin/" (22813 46447 0 0) "language.html" "../" "./")
+
+ ("/Users/nurv/git/unbabel/messages/core/templates/" (22829 18756 0 0) "core/" "base.html" "admin/" "../" "./")
+
+ ("/Users/nurv/git/unbabel/messages/" (22906 9256 0 0) "zendesk-migration.py" "zendesk/" "setup.cfg" "requirements.txt" "README.md" "npm-debug.log" "messages/" "manage.py" "interface/" "freshdesk_unbabel/" "env.pyc" "env.py" "dynamic/" "dump.rdb" "docs/" "db.sqlite3" "core/" "__pycache__/" ".style.yapf" ".idea/" ".gitignore" ".git/" ".env~/" ".env-p3/" ".env" ".DS_Store" ".coveragerc" ".coverage" "../" "./")
+
+ ("/Users/nurv/git/unbabel/messages/zendesk/" (22906 5523 0 0) "views/" "utils.pyc" "utils.py" "urls.pyc" "urls.py" "tests_zendesk.pyc" "tests_zendesk.py" "tests_ticket_translation.pyc" "tests_ticket_translation.py" "tests.pyc" "tests.py" "test_utils.pyc" "test_utils.py" "templates/" "models.pyc" "models.py" "migrations/" "integration.py~" "integration.pyc" "integration.py" "forms.py~" "forms.pyc" "forms.py" "apps.py" "api.pyc" "api.py" "admin.pyc" "admin.py" "__init__.pyc" "__init__.py" "#utils.py#" "../" "./")
+
+ ("/Users/nurv/git/unbabel/messages/interface/" (22906 1498 0 0) "views.pyc" "views.py" "urls.pyc" "urls.py" "tests.pyc" "tests.py" "templates/" "static/" "signals.pyc" "signals.py" "models.pyc" "models.py" "migrations/" "decorators.pyc" "decorators.py" "apps.pyc" "apps.py" "admin.pyc" "admin.py" "__init__.pyc" "__init__.py" "#models.py#" "../" "./")
+
+ ("/Users/nurv/extract/" (22905 12656 0 0) "web-mode/" "python-mode/" "dump.py~" "dump.py" ".DS_Store" "../" "./")
+
+ ("/Users/nurv/.emacs.d/snippets/django/python-mode/" (22905 12599 0 0) "xml" "url" "updateview" "traceback" "time" "text" "templateview" "smallinteger" "slug" "sendmail" "pudb" "positivesmallinteger" "positiveinteger" "phonenumber" "pdb" "o2o" "nullboolean" "mxml" "musstate" "murl" "mtime" "mtext" "msmallint" "mslug" "mpossmallint" "mposint" "mphone" "modelform" "model" "mnullbool" "mip" "mint" "mimg" "mfloat" "mfilepath" "mfile" "memail" "mdecimal" "mdatetime" "mdate" "mcoseint" "mchar" "mbool" "mbigint" "mauto" "manytomany" "m2m" "listview" "ipdb" "ipaddress" "integer" "init" "image" "fview" "furl" "ftmuchoice" "ftime" "ftchoice" "fslug" "fsdatetime" "fregex" "form" "fnullbool" "fmuval" "fmuchoice" "fmomuchoice" "fmochoice" "float" "fk" "fip" "fint" "fimg" "filepath" "file" "ffilepath" "ffile" "femail" "fdecimal" "fdatetime" "fdate" "fcombo" "fchoice" "fchar" "email" "dtime" "detailview" "deleteview" "decimal" "date" "createview" "commaseparatedinteger" "char" "cbview" "boolean" "auto" ".DS_Store" "../" "./")
+
+ ("/Users/nurv/extract/python-mode/" (22905 12525 0 0) "url" "updateview" "traceback" "templateview" "sendmail" "pudb" "pdb" "o2o" "mxml" "musstate" "murl" "mtime" "mtext" "msmallint" "mslug" "mpossmallint" "mposint" "mphone" "modelform" "model" "mnullbool" "mip" "mint" "mimg" "mfloat" "mfilepath" "mfile" "memail" "mdecimal" "mdatetime" "mdate" "mcoseint" "mchar" "mbool" "mbigint" "mauto" "m2m" "listview" "ipdb" "init" "fview" "furl" "ftmuchoice" "ftime" "ftchoice" "fslug" "fsdatetime" "fregex" "form" "fnullbool" "fmuval" "fmuchoice" "fmomuchoice" "fmochoice" "fk" "fip" "fint" "fimg" "ffilepath" "ffile" "femail" "fdecimal" "fdatetime" "fdate" "fcombo" "fchoice" "fchar" "detailview" "deleteview" "createview" "cbview" ".DS_Store" "../" "./")
+
  ("/Users/nurv/git/unbabel/messages/interface/templates/interface/admin/thread/" (22905 13409 0 0) "detail.html" "#detail.html#" "../" "./")
 
- ("/Users/nurv/" (22905 14449 0 0) "XNS/" "x.txt" "VirtualBox VMs/" "trans" "text" "test.html" "t.py" "t.json" "t.csv" "stories.js" "script.py" "result.json" "resources.arsc" "requests.txt" "remote.txt" "PycharmProjects/" "Public/" "Proust/" "programmingclasses/" "Pictures/" "payload" "owasp_zap_root_ca.cer" "output.csv" "output" "out.csv" "old-dump.py" "nginx-access.log" "Music/" "Movies/" "mongod.log" "migrations/" "logs.tgz" "Library/" "input.py" "index.js~" "index.js" "index.hs" "hello.py" "git/" "gen_from_zendesk.py" "freshdeskmigrations/" "foo" "extract/" "example/" "dump.rdb" "dump.html" "dump" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "db/" "d.txt" "csvs.zip" "csv" "construct.py" "billing-staging.env" "b.py~" "b.py" "Applications/" "ansible.cfg" "a.py~" "a.py" "a.js" ".zshrc" ".zsh_history" ".zsh-update" ".zcompdump-Anna-5.2" ".w3m/" ".viminfo" ".v8flags.5.5.372.41.nurv.json" ".Trash/" ".ssh/" ".sqlite_history" ".screenrc.old" ".screenrc" ".python_history" ".psql_history" ".pip/" ".oracle_jre_usage/" ".oh-my-zsh/" ".nylas-mail/" ".npm/" ".node_repl_history" ".node-gyp/" ".mongorc.js" ".matplotlib/" ".local/" ".lesshst" ".irssi/" ".ipython/" ".hyper_plugins/" ".hyper.js" ".gsutil/" ".google_libcloud_auth.zendesk-160711" ".gnupg/" ".gitconfig.old" ".gitconfig" ".gem/" ".ethash/" ".env/" ".emacs.old" ".emacs.d.old/" ".emacs.d/" ".emacs" ".DS_Store" ".dropbox/" ".dbshell" ".cups/" ".config/" ".cocoapods/" ".CFUserTextEncoding" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".aws/" ".atom/" ".ansible_galaxy" ".ansible/" "#a.html#~" "#a.html#" "../" "./")
-
  ("/Users/nurv/git/" (22904 48503 0 0) "unbabel/" "thinthread/" "stellarwind/" "rogue/" "Proust/" "lyman/" "framework/" "emacs-for-python/" ".idea/" ".env/" ".DS_Store" "../" "./")
-
- ("/Users/nurv/extract/python-mode/" (22905 12334 0 0) "url" "updateview" "traceback" "templateview" "sendmail" "pudb" "pdb" "o2o" "mxml" "musstate" "murl" "mtime" "mtext" "msmallint" "mslug" "mpossmallint" "mposint" "mphone" "modelform" "model" "mnullbool" "mip" "mint" "mimg" "mfloat" "mfilepath" "mfile" "memail" "mdecimal" "mdatetime" "mdate" "mcoseint" "mchar" "mbool" "mbigint" "mauto" "m2m" "listview" "ipdb" "init" "fview" "furl" "ftmuchoice" "ftime" "ftchoice" "fslug" "fsdatetime" "fregex" "form" "fnullbool" "fmuval" "fmuchoice" "fmomuchoice" "fmochoice" "fk" "fip" "fint" "fimg" "ffilepath" "ffile" "femail" "fdecimal" "fdatetime" "fdate" "fcombo" "fchoice" "fchar" "detailview" "deleteview" "createview" "cbview" "../" "./")
-
- ("/tmp/" (22905 11859 0 0) "zendesk.env" "wifi-07-25-2017__14:22:54.log" "wifi-07-25-2017__14:22:53.log" "wifi-07-24-2017__15:59:19.log" "wifi-07-24-2017__15:27:56.log" "wifi-07-24-2017__14:23:39.log" "textmate-501.sock" "npm-77150-fc7b95a9/" "messages.env" "dump.js" "documents.env" "com.apple.launchd.jM8UkI5vAm/" "com.apple.launchd.1Sbm3580kH/" "Atom Crashes/" "ansible-digital_ocean.cache" ".s.PGSQL.5432.lock" ".s.PGSQL.5432" ".keystone_install_lock" ".env_template" "../" "./")
-
- ("/Users/nurv/extract/" (22905 12275 0 0) "python-mode/" "dump.py~" "dump.py" ".DS_Store" "../" "./")
-
- ("/Users/nurv/.emacs.d/snippets/django/python-mode/" (22904 48568 0 0) "xml" "url" "time" "text" "smallinteger" "slug" "sendmail" "positivesmallinteger" "positiveinteger" "phonenumber" "nullboolean" "model" "manytomany" "ipaddress" "integer" "image" "float" "fk" "filepath" "file" "email" "dtime" "decimal" "date" "commaseparatedinteger" "char" "boolean" "auto" "../" "./")
 
  ("/Users/nurv/.emacs.d/snippets/django/html-mode/" (22904 48568 0 0) "trans" "ifelse" "blocktrans.with" "blocktrans" "block" "../" "./")
 
@@ -108,21 +140,9 @@
 
  ("/Users/nurv/.emacs.d/snippets/" (22904 48598 0 0) "django/" ".DS_Store" "../" "./")
 
- ("/Users/nurv/.emacs.d/" (22905 10467 0 0) "snippets/" "network-security.data" "ido.last~" "ido.last" "elpa/" "auto-save-list/" "anaconda-mode/" "ac-comphist.dat" ".python-environments/" ".mc-lists.el" "../" "./")
-
- ("/Users/nurv/.env/" (22905 10936 0 0) "zshrc" "XML/" "vars.sh" "screenrc" "README.md" "LICENSE" "init.sh" "gitconfig" "getpom.pl" "emacs~" "emacs.d/" "emacs" "common.sh" "bashrc" ".git/" "../" "./")
-
  ("/Users/nurv/git/unbabel/messages/interface/templates/interface/" (22905 10468 0 0) "ui.html" "header.html" "base.html" "admin/" "#base.html#" "../" "./")
 
  ("/Users/nurv/git/unbabel/messages/.env~/lib/python2.7/site-packages/rest_framework/" (22905 10468 0 0) "viewsets.pyc" "viewsets.py" "views.pyc" "views.py" "versioning.pyc" "versioning.py" "validators.pyc" "validators.py" "utils/" "urls.pyc" "urls.py" "urlpatterns.pyc" "urlpatterns.py" "throttling.pyc" "throttling.py" "test.pyc" "test.py" "templatetags/" "templates/" "status.pyc" "status.py" "static/" "settings.pyc" "settings.py" "serializers.pyc" "serializers.py" "schemas.pyc" "schemas.py" "routers.pyc" "routers.py" "reverse.pyc" "reverse.py" "response.pyc" "response.py" "request.pyc" "request.py" "renderers.pyc" "renderers.py" "relations.pyc" "relations.py" "permissions.pyc" "permissions.py" "parsers.pyc" "parsers.py" "pagination.pyc" "pagination.py" "negotiation.pyc" "negotiation.py" "models.pyc" "models.py" "mixins.pyc" "mixins.py" "metadata.pyc" "metadata.py" "locale/" "generics.pyc" "generics.py" "filters.pyc" "filters.py" "fields.pyc" "fields.py" "exceptions.pyc" "exceptions.py" "documentation.pyc" "documentation.py" "decorators.pyc" "decorators.py" "compat.pyc" "compat.py" "authtoken/" "authentication.pyc" "authentication.py" "__pycache__/" "__init__.pyc" "__init__.py" "#schemas.py#" "../" "./")
-
- ("/Users/nurv/git/unbabel/messages/interface/" (22905 10468 0 0) "views.pyc" "views.py" "urls.pyc" "urls.py" "tests.pyc" "tests.py" "templates/" "static/" "signals.pyc" "signals.py" "models.pyc" "models.py" "migrations/" "decorators.pyc" "decorators.py" "apps.pyc" "apps.py" "admin.pyc" "admin.py" "__init__.pyc" "__init__.py" "#models.py#" "../" "./")
-
- ("/Users/nurv/git/unbabel/messages/" (22904 49412 0 0) "zendesk-migration.py" "zendesk/" "setup.cfg" "requirements.txt" "README.md" "npm-debug.log" "messages/" "manage.py" "interface/" "freshdesk_unbabel/" "env.pyc" "env.py" "dynamic/" "dump.rdb" "docs/" "db.sqlite3" "core/" "__pycache__/" ".style.yapf" ".idea/" ".gitignore" ".git/" ".env~/" ".env-p3/" ".env" ".DS_Store" ".coveragerc" ".coverage" "../" "./")
-
- ("/Users/nurv/git/unbabel/messages/core/" (22904 51555 0 0) "views.pyc" "views.py" "utils.py~" "utils.pyc" "utils.py" "urls.pyc" "urls.py" "tests.pyc" "tests.py" "templates/" "tasks.pyc" "tasks.py" "static/" "signals.pyc" "signals.py" "services.pyc" "services.py" "serializer.pyc" "serializer.py" "permissions.py~" "permissions.pyc" "permissions.py" "models.pyc" "models.py" "migrations/" "management/" "integrations.pyc" "integrations.py" "freshdesk/" "forms.pyc" "forms.py" "fixtures/" "dynamicTags.pyc" "backends.pyc" "backends.py" "authentication.py~" "authentication.pyc" "authentication.py" "apps.pyc" "apps.py" "apiUrls.pyc" "apiUrls.py" "api.pyc" "api.py" "admin.pyc" "admin.py" "__pycache__/" "__init__.pyc" "__init__.py" "#tasks.py#" "#permissions.py#" "../" "./")
-
- ("/Users/nurv/git/unbabel/messages/zendesk/" (22905 9740 0 0) "views/" "utils.pyc" "utils.py" "urls.pyc" "urls.py" "tests_zendesk.pyc" "tests_zendesk.py" "tests_ticket_translation.pyc" "tests_ticket_translation.py" "tests.pyc" "tests.py" "test_utils.pyc" "test_utils.py" "templates/" "models.pyc" "models.py" "migrations/" "integration.py~" "integration.pyc" "integration.py" "forms.py~" "forms.pyc" "forms.py" "apps.py" "api.pyc" "api.py" "admin.pyc" "admin.py" "__init__.pyc" "__init__.py" "#utils.py#" "../" "./")
 
  ("/Users/nurv/git/unbabel/zendesk-app/" (22747 32550 0 0) "README.md" "package.sh" "app/" ".gitignore" ".git/" ".DS_Store" "../" "./")
 

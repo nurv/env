@@ -1,3 +1,10 @@
 *~
 \#*\#
 emacs.d/.python-environments/*
+emacs.d/var/recentf-save.el
+emacs.d/var/projectile/known-projects.el
+emacs.d/tramp
+emacs.d/var/ac-comphist.el
+emacs.d/var/ido-save-directory-list.el
+emacs.d/var/mc-list.el
+db.sqlite3
