@@ -23,6 +23,8 @@
   (setq initial-scratch-message "")
   (setq load-prefer-newer t)
   (defalias 'yes-or-no-p 'y-or-n-p)
+  (when (eq system-type 'gnu/linux)
+    (menu-bar-mode 0))
   (scroll-bar-mode 0)
   (tool-bar-mode 0)
   (delete-selection-mode 1)
@@ -43,10 +45,16 @@
   (defvar nurv/backup-directory "~/.tmp")
   
   (if window-system
-      (when (eq system-type 'darwin)
-	(set-face-attribute 'default nil :family "SF Mono")
-	(set-face-attribute 'default nil :height 140)
-	(setq-default line-spacing 3))))
+      (progn
+	(when (eq system-type 'darwin)
+	  (set-face-attribute 'default nil :family "SF Mono")
+	  (set-face-attribute 'default nil :height 140)
+	  (setq-default line-spacing 3))
+	(when (eq system-type 'gnu/linux)
+	  (set-face-attribute 'default nil :family "SF Mono")
+	  (set-face-attribute 'default nil :height 100)
+	  (setq-default line-spacing 3)))))
+
 
 (require 'package)
 (setq package-enable-at-startup nil)
@@ -324,8 +332,6 @@
 
 (use-package open-url-at-point
   :bind ("C-c C-o" . open-url-at-point))
-
-http://netflix.com
 
 (use-package paren
   :demand t
