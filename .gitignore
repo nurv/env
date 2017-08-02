@@ -8,5 +8,8 @@ emacs.d/var/ac-comphist.el
 emacs.d/var/ido-save-directory-list.el
 emacs.d/var/mc-list.el
 emacs.d/var/*
+projectile-bookmarks.eld
+ac-comphist.dat
+ido.last
 db.sqlite3
 *.elc

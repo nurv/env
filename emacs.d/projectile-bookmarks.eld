@@ -1,1 +1,1 @@
-("~/.env/" "~/git/unbabel/messages/")
+("~/.env/" "~/git/unbabel/messages/" "~/git/unbabel/bootstrap/")

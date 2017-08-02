@@ -60,6 +60,11 @@
 	(package-refresh-contents)
 	(package-install 'use-package))
 
+(progn ;   local packages
+  (let ((dir (expand-file-name "local" user-emacs-directory)))
+    (when (file-exists-p dir)
+      (add-to-list 'load-path dir))))
+
 (progn ;    `use-package'
   (require  'use-package)
   (setq use-package-verbose t)
@@ -116,8 +121,7 @@
   :ensure t)
 
 (use-package leet-modeline
-  :init (progn (require 'leet-modeline))
-  :load-path "~/.emacs.d/lisp/")
+  :init (progn (require 'leet-modeline)))
 
 (use-package atom-one-dark-theme
   :ensure t
@@ -319,16 +323,9 @@
          ("C-c C-<" . mc/mark-all-like-this)))
 
 (use-package open-url-at-point
-  :config (defun open-url-at-point (&optional arg)
-	    "Browse the url at point.
-Open the url in a www browser or, when called with a prefix
-argument, in Emacs."
-	    (interactive)
-	    (let ((url (browse-url-at-(point)oint)))
-	      (if arg
-		  (browse-url-emacs url)
-		(browse-url url))))
   :bind ("C-c C-o" . open-url-at-point))
+
+http://netflix.com
 
 (use-package paren
   :demand t
@@ -428,7 +425,7 @@ argument, in Emacs."
          ("C--" . zoom-frm-out)))
 
 (use-package utils
-  :load-path "~/.emacs.d/lisp"
+  :load-path "~/.emacs.d/local"
   :bind (([f10] . fullscreen)
 	 ("M-<up>" . move-backward-block)
 	 ("M-<down>" . move-forward-block)
