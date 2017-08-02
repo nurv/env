@@ -7,4 +7,6 @@ emacs.d/tramp
 emacs.d/var/ac-comphist.el
 emacs.d/var/ido-save-directory-list.el
 emacs.d/var/mc-list.el
+emacs.d/var/*
 db.sqlite3
+*.elc
