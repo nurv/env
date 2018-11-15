@@ -262,6 +262,7 @@
   :commands (flycheck-mode)
   :init (progn
 	  (add-hook 'prog-mode-hook #'flycheck-mode)
+	  (setq-default flycheck-flake8-maximum-line-length 120)
 	  (add-hook 'after-init-hook #'global-flycheck-mode)))
 
 (use-package ispell
@@ -280,9 +281,6 @@
 
 (use-package flx
   :ensure t)
-
-(use-package ftgp
-  :demand t)
 
 (use-package diff-hl
   :ensure t
@@ -360,8 +358,7 @@
   :bind ("M-t" . counsel-projectile-find-file)
   :config (progn
             (projectile-mode)
-            (require 'counsel-projectile)
-            (counsel-projectile-on)))
+            (require 'counsel-projectile)))
 
 (use-package rainbow-mode
   :ensure t
