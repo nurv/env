@@ -352,10 +352,10 @@
 (ensure-package multiple-cursors
   :bind (("M-RET" . mc/edit-lines)
          ("C->" . mc/mark-previous-like-this)
-         ("C-<" . mc/mark-next-like-this)
-         ("C-M->" . mc/unmark-next-like-this)
+         ("M-d" . mc/mark-next-like-this)
+         ("C-M-d" . mc/unmark-next-like-this)
          ("C-M-<" . mc/unmark-previous-like-this)
-         ("C-c C-<" . mc/mark-all-like-this)))
+         ("C-d" . mc/mark-all-like-this)))
 
 (use-package open-url-at-point
   :bind ("C-c C-o" . open-url-at-point))
