@@ -80,10 +80,21 @@
   (setq use-package-always-defer t)
   (setq use-package-enable-imenu-support t))
 
-(use-package try
+(defun install-if-not-exist(package)
+  (if (not (package-installed-p package))
+     	 (package-install package)))
+
+(defmacro ensure-package (package &rest config)
+  `(progn
+     (install-if-not-exist ',package)
+     ,(cons 'use-package (cons package config))))
+  
+     
+      
+(ensure-package try
   :ensure t)
 
-(use-package which-key
+(ensure-package which-key
   :ensure t
   :config
   (which-key-mode))
@@ -106,7 +117,7 @@
   (when (file-exists-p custom-file)
     (load custom-file)))
 
-(use-package server
+(ensure-package server
   :config (or (server-running-p) (server-mode)))
 
 (use-package abbrev
@@ -115,10 +126,10 @@
   (setq save-abbrevs 'silently)
   (setq-default abbrev-mode t))
 
-(use-package anaconda-mode
+(ensure-package anaconda-mode
   :ensure t)
 
-(use-package anzu
+(ensure-package anzu
   :ensure t
   :diminish 'anzu-mode
   :config (global-anzu-mode)
@@ -128,7 +139,7 @@
          ([remap isearch-query-replace] . anzu-isearch-query-replace)
          ([remap isearch-query-replace-regexp] . anzu-isearch-query-replace-regexp)))
 
-(use-package autorevert
+(ensure-package autorevert
   :config
   (global-auto-revert-mode 1)
 
@@ -137,14 +148,14 @@
         auto-revert-verbose nil))
 
 
-(use-package all-the-icons
+(ensure-package all-the-icons
   :config (progn (require 'all-the-icons))
   :ensure t)
 
 (use-package leet-modeline
   :init (progn (require 'leet-modeline)))
 
-(use-package atom-one-dark-theme
+(ensure-package atom-one-dark-theme
   :ensure t
   :init (progn
 	    (load-theme 'atom-one-dark t t))
@@ -157,25 +168,25 @@
 ;;      (leet-setup-modeline-format)
       (set-face-background hl-line-face "purple4"))))
 
-(use-package beginend
+(ensure-package beginend
   :ensure t
   :config
   (beginend-global-mode)
   (diminish 'beginend-global-mode))
 
-(use-package browse-url
+(ensure-package browse-url
   :ensure t
   :config
   (setq browse-url-generic-program "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"))
 
-(use-package buffer-move
+(ensure-package buffer-move
   :ensure t
   :bind (("M-S-<up>" . buf-move-up)
 	 ("M-S-<down>" . buf-move-down)
 	 ("M-S-<left>" .  buf-move-left)
 	 ("M-S-<right>" . buf-move-right)))
 
-(use-package company
+(ensure-package company
   :ensure t
   :diminish ""
   :init (progn
@@ -187,7 +198,7 @@
             (setq company-tooltip-flip-when-above t)
 	    (add-to-list 'company-backends 'company-anaconda)))
 
-(use-package counsel
+(ensure-package counsel
   :ensure t
   :demand t
   :bind (("M-x" . counsel-M-x)
@@ -198,9 +209,10 @@
   :init (progn
 	  (cua-mode t)))
 
-(use-package dabbrev
+(ensure-package dabbrev
   :bind (("C-c <tab>" . dabbrev-expand)))
 
+(install-if-not-exist 'color-theme-modern)
 (use-package dark-laptop-theme
   :init (progn
 	  (load-theme 'dark-laptop t t))
@@ -230,16 +242,16 @@
   :config (progn
             (setq dired-omit-files "^\\...+$")))
 
-(use-package emmet-mode
+(ensure-package emmet-mode
    :demand t)
 
-(use-package electric
+(ensure-package electric
   :demand t
   :bind (("C-o" . electric-newline-and-maybe-indent))
   :config (progn
 	    (electric-pair-mode)))
 
-(use-package erc
+(ensure-package erc
   :config (progn
             (setq erc-email-userid "nurv")))
 
@@ -257,7 +269,7 @@
         `((".*" ,nurv/backup-directory t)))
   (setq create-lockfiles nil))
 
-(use-package flycheck
+(ensure-package flycheck
   :diminish 'flycheck-mode
   :commands (flycheck-mode)
   :init (progn
@@ -265,11 +277,11 @@
 	  (setq-default flycheck-flake8-maximum-line-length 120)
 	  (add-hook 'after-init-hook #'global-flycheck-mode)))
 
-(use-package ispell
+(ensure-package ispell
   :defer t
   :bind (("C-:" . ispell-word)))
 
-(use-package flyspell
+(ensure-package flyspell
   :ensure t
   :diminish 'flyspell-mode
   :bind (:map flyspell-mode-map
@@ -279,27 +291,27 @@
           (dolist (mode-hook '(text-mode-hook org-mode-hook LaTeX-mode-hook))
             (add-hook mode-hook #'flyspell-mode))))
 
-(use-package flx
+(ensure-package flx
   :ensure t)
 
-(use-package diff-hl
+(ensure-package diff-hl
   :ensure t
   :init (progn
             (global-diff-hl-mode)
             (add-hook 'magit-post-refresh-hook 'diff-hl-magit-post-refresh t)))
 
-(use-package ibuffer
+(ensure-package ibuffer
   :bind (("C-x C-b" . ibuffer)))
 
 (use-package iso-transl
   :demand t)
 
-(use-package ido
+(ensure-package ido
   :ensure t
   :init (progn
 	    (ido-mode t)))
 
-(use-package ivy
+(ensure-package ivy
   :diminish ""
   :demand t
   :config (progn
@@ -310,7 +322,7 @@
 		    (t . ivy--regex-fuzzy)))
 	    (setq ivy-initial-inputs-alist nil)))
 
-(use-package jedi
+(ensure-package jedi
   :init (progn
 	  (add-hook 'python-mode-hook 'jedi:setup)
 	  (setq jedi:complete-on-dot t)))
@@ -326,7 +338,7 @@
     (setq indent-tabs-mode nil))
   (add-hook 'lisp-interaction-mode-hook #'indent-spaces-mode))
 
-(use-package linum
+(ensure-package linum
   :bind (("C-c l" . linum-mode))
   :init (progn
 					;(add-hook 'prog-mode-hook #'linum-mode))
@@ -334,10 +346,10 @@
   :config (progn
 	    (setq linum-format "%4d \u2502")))
 
-(use-package magit
+(ensure-package magit
   :bind (("C-x g"   . magit-status)))
 
-(use-package multiple-cursors
+(ensure-package multiple-cursors
   :bind (("M-RET" . mc/edit-lines)
          ("C->" . mc/mark-previous-like-this)
          ("C-<" . mc/mark-next-like-this)
@@ -348,11 +360,12 @@
 (use-package open-url-at-point
   :bind ("C-c C-o" . open-url-at-point))
 
-(use-package paren
+(ensure-package paren
   :demand t
   :config (show-paren-mode 1))
 
-(use-package projectile
+(install-if-not-exist 'counsel-projectile)
+(ensure-package projectile
   :demand t
   :diminish ""
   :bind ("M-t" . counsel-projectile-find-file)
@@ -360,18 +373,18 @@
             (projectile-mode)
             (require 'counsel-projectile)))
 
-(use-package rainbow-mode
+(ensure-package rainbow-mode
   :ensure t
   :init
   (add-hook 'css-mode-hook 'rainbow-mode)
   (add-hook 'web-mode-hook 'rainbow-mode))
 
-(use-package recentf
+(ensure-package recentf
   :ensure t
   :demand t
   :config (add-to-list 'recentf-exclude "^/\\(?:ssh\\|su\\|sudo\\)?:"))
 
-(use-package web-mode
+(ensure-package web-mode
   :config
   (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
   (add-to-list 'auto-mode-alist '("\\.htm\\'" . web-mode))
@@ -391,7 +404,7 @@
   (setq web-mode-enable-css-colorization t)
   (setq web-mode-enable-current-element-highlight t))
 
-(use-package whitespace
+(ensure-package whitespace
   :ensure t
   :bind (("C-c w" . whitespace-mode))
   :config
@@ -407,20 +420,20 @@
           (tab-mark 9 [9655 9] [92 9]) ; tab, ▷
           )))
 
-(use-package winner
+(ensure-package winner
   :bind (("C-c <left>" . winner-undo)
 	 ("C-c <right>" . winner-redo))
   :config
   (when (fboundp 'winner-mode)
     (winner-mode 1)))
 
-(use-package pabbrev
+(ensure-package pabbrev
   :ensure t)
 
 (use-package prog-mode
   :bind (("C-;" . comment-line)))
 
-(use-package neotree
+(ensure-package neotree
   :ensure t
   :bind ("C-c C-e" . neotree-toggle)
   :config (progn
@@ -441,16 +454,16 @@
 	     ("H" . neotree-hidden-file-toggle))))
 
 
-(use-package python-mode
+(ensure-package python-mode
   :init (progn
 	  (add-hook 'python-mode-hook 'anaconda-mode)
 	  (add-hook 'python-mode-hook 'anaconda-eldoc-mode)))
 
-(use-package redo+
-  :ensure t
-  :bind (("C-S-z" . redo)))
+;; (ensure-package redo+
+;;   :ensure t
+;;   :bind (("C-S-z" . redo)))
 
-(use-package yasnippet
+(ensure-package yasnippet
   :diminish 'yas-minor-mode
   :ensure t
   :demand t
@@ -460,10 +473,10 @@
 	  (add-to-list 'yas-snippet-dirs (expand-file-name "~/.emacs.d/snippets/django"))
 	  (add-hook 'python-mode-hook #'yas-minor-mode)))
 
-(use-package zoom-frm
-  :ensure t
-  :bind (("C-+" . zoom-frm-in)
-         ("C--" . zoom-frm-out)))
+;; (ensure-package zoom-frm
+;;   :ensure t
+;;   :bind (("C-+" . zoom-frm-in)
+;;          ("C--" . zoom-frm-out)))
 
 (use-package utils
   :load-path "~/.emacs.d/local"

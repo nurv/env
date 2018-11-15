@@ -139,12 +139,12 @@ _get_virtualenv(){
 }
 
 _get_pom(){
-  POM=$(command perl -I ~/.env "$HOME/.env/getpom.pl")
-  if [ -z "$POM" ]; then
-      echo ""
-  else
-      echo " %F{yellow}⬡ `basename \"$POM\"`%f"
-  fi
+  # POM=$(command perl -I ~/.env "$HOME/.env/getpom.pl")
+  # if [ -z "$POM" ]; then
+  #     echo ""
+  # else
+  #     echo " %F{yellow}⬡ `basename \"$POM\"`%f"
+  # fi
 }
 
 function set_prompt_symbol () {
@@ -189,3 +189,17 @@ source "$HOME/.env/common.sh"
 
 # added by travis gem
 [ -f /Users/nurv/.travis/travis.sh ] && source /Users/nurv/.travis/travis.sh
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/highlighters
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
+source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
+zstyle ':completion:*' matcher-list '' \
+  'm:{a-z\-}={A-Z\_}' \
+  'r:[^[:alpha:]]||[[:alpha:]]=** r:|=* m:{a-z\-}={A-Z\_}' \
+  'r:|?=** m:{a-z\-}={A-Z\_}'
