@@ -36,8 +36,9 @@
   (setq mac-command-modifier 'meta)
   (setq select-enable-clipboard t)
   (setq frame-title-format '(buffer-file-name "%f" ("%b")))
+  
   (setq with-editor-emacsclient-executable nil)
-  (setq ispell-program-name "aspell")
+  (setq ispell-program-name "/usr/local/bin/aspell")
 
   (column-number-mode 1)
   (line-number-mode 1)
@@ -49,7 +50,7 @@
 	(when (eq system-type 'darwin)
 	  (set-face-attribute 'default nil :family "SF Mono")
 	  (set-face-attribute 'default nil :height 140)
-	  (setq-default line-spacing 3))
+	  (setq-default line-spacing 4))
 	(when (eq system-type 'gnu/linux)
 	  (set-face-attribute 'default nil :family "SF Mono")
 	  (set-face-attribute 'default nil :height 100)
@@ -86,6 +87,18 @@
   :ensure t
   :config
   (which-key-mode))
+
+(setq ring-bell-function
+      (lambda ()
+        (let ((orig-fg (face-foreground 'mode-line))
+	      (orig-bg (face-background 'mode-line)))
+          (set-face-background 'mode-line "#820333")
+          (set-face-foreground 'mode-line "#ffffff")
+          (run-with-idle-timer 0.1 nil
+                               (lambda (fg bg)
+				 (set-face-foreground 'mode-line fg)
+				 (set-face-background 'mode-line bg))
+                               orig-fg orig-bg))))
 
 (use-package custom
   :config
@@ -141,7 +154,7 @@
     (interactive)
     (let ()
       (enable-theme 'atom-one-dark)
-      (leet-setup-modeline-format)
+;;      (leet-setup-modeline-format)
       (set-face-background hl-line-face "purple4"))))
 
 (use-package beginend
@@ -213,8 +226,7 @@
 
 (use-package dired-x
   :after dired
-  :init (progn
-          (add-hook 'dired-mode-hook #'dired-omit-mode))
+  :init (progn)
   :config (progn
             (setq dired-omit-files "^\\...+$")))
 
@@ -251,6 +263,10 @@
   :init (progn
 	  (add-hook 'prog-mode-hook #'flycheck-mode)
 	  (add-hook 'after-init-hook #'global-flycheck-mode)))
+
+(use-package ispell
+  :defer t
+  :bind (("C-:" . ispell-word)))
 
 (use-package flyspell
   :ensure t
@@ -315,7 +331,8 @@
 (use-package linum
   :bind (("C-c l" . linum-mode))
   :init (progn
-	  (add-hook 'prog-mode-hook #'linum-mode))
+					;(add-hook 'prog-mode-hook #'linum-mode))
+	  )
   :config (progn
 	    (setq linum-format "%4d \u2502")))
 
@@ -373,7 +390,7 @@
   (set-face-attribute 'web-mode-html-tag-face nil :foreground "#61AFEF")
   (set-face-attribute 'web-mode-html-attr-name-face nil :foreground "#E06C75")
 
-  (setq etq web-mode-enable-auto-pairing t)
+  (setq web-mode-enable-auto-pairing t)
   (setq web-mode-enable-css-colorization t)
   (setq web-mode-enable-current-element-highlight t))
 
@@ -406,6 +423,27 @@
 (use-package prog-mode
   :bind (("C-;" . comment-line)))
 
+(use-package neotree
+  :ensure t
+  :bind ("C-c C-e" . neotree-toggle)
+  :config (progn
+	    (setq-default neo-smart-open t)
+	    (setq-default neo-dont-be-alone t)
+	    (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+	    (bind-keys
+	     :map neotree-mode-map
+	     ("RET" . neotree-enter)
+	     ("c" . neotree-create-node)
+	     ("d" . neotree-delete-node)
+	     ("r" . neotree-rename-node)
+	     ("c" . neotree-create-node)
+	     ("r" . neotree-rename-node)
+	     ("d" . neotree-delete-node)
+	     ("g" . neotree-refresh)
+	     ("C" . neotree-change-root)
+	     ("H" . neotree-hidden-file-toggle))))
+
+
 (use-package python-mode
   :init (progn
 	  (add-hook 'python-mode-hook 'anaconda-mode)
@@ -436,6 +474,7 @@
 	 ("M-<up>" . move-backward-block)
 	 ("M-<down>" . move-forward-block)
 	 ("C-k" . delete-line)))
+
 
 (provide 'emacs)
 
