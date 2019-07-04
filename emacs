@@ -49,8 +49,8 @@
       (progn
 	(when (eq system-type 'darwin)
 	  (set-face-attribute 'default nil :family "SF Mono")
-	  (set-face-attribute 'default nil :height 140)
-	  (setq-default line-spacing 4))
+	  (set-face-attribute 'default nil :height 150)
+	  (setq-default line-spacing 5))
 	(when (eq system-type 'gnu/linux)
 	  (set-face-attribute 'default nil :family "SF Mono")
 	  (set-face-attribute 'default nil :height 100)
@@ -79,6 +79,12 @@
   (setq use-package-verbose t)
   (setq use-package-always-defer t)
   (setq use-package-enable-imenu-support t))
+
+(defun what-face (pos)
+  (interactive "d")
+  (let ((face (or (get-char-property (pos) 'read-face-name)
+                  (get-char-property (pos) 'face))))
+    (if face (message "Face: %s" face) (message "No face at %d" pos))))
 
 (defun install-if-not-exist(package)
   (if (not (package-installed-p package))
@@ -167,6 +173,17 @@
       (enable-theme 'atom-one-dark)
 ;;      (leet-setup-modeline-format)
       (set-face-background hl-line-face "purple4"))))
+
+(ensure-package doom-themes
+		:ensure t
+		:init (progn
+			(load-theme 'doom-one t t))
+		:config
+		(defun go-doom ()
+		  "Change to doom theme"
+		  (interactive)
+		  (let ()
+		    (enable-theme 'doom-one))))
 
 (ensure-package beginend
   :ensure t
@@ -368,7 +385,8 @@
 (ensure-package projectile
   :demand t
   :diminish ""
-  :bind ("M-t" . counsel-projectile-find-file)
+  :bind (("M-t" . counsel-projectile-find-file)
+	 ("M-p" . 'projectile-command-map))
   :config (progn
             (projectile-mode)
             (require 'counsel-projectile)))
@@ -378,6 +396,14 @@
   :init
   (add-hook 'css-mode-hook 'rainbow-mode)
   (add-hook 'web-mode-hook 'rainbow-mode))
+
+(ensure-package markdown-mode
+  :ensure t
+  :commands (markdown-mode gfm-mode)
+  :mode (("README\\.md\\'" . gfm-mode)
+         ("\\.md\\'" . markdown-mode)
+         ("\\.markdown\\'" . markdown-mode))
+  :init (setq markdown-command "multimarkdown"))
 
 (ensure-package recentf
   :ensure t
@@ -435,7 +461,7 @@
 
 (ensure-package neotree
   :ensure t
-  :bind ("C-c C-e" . neotree-toggle)
+  :bind ("C-c C-y" . neotree-toggle)
   :config (progn
 	    (setq-default neo-smart-open t)
 	    (setq-default neo-dont-be-alone t)
@@ -473,6 +499,8 @@
 	  (add-to-list 'yas-snippet-dirs (expand-file-name "~/.emacs.d/snippets/django"))
 	  (add-hook 'python-mode-hook #'yas-minor-mode)))
 
+(ensure-package forge)
+
 ;; (ensure-package zoom-frm
 ;;   :ensure t
 ;;   :bind (("C-+" . zoom-frm-in)
@@ -488,4 +516,38 @@
 
 (provide 'emacs)
 
+(defun setup-tide-mode ()
+  (interactive)
+  (tide-setup)
+  (flycheck-mode +1)
+  (setq flycheck-check-syntax-automatically '(save mode-enabled))
+  (eldoc-mode +1)
+  (tide-hl-identifier-mode +1)
+  ;; company is an optional dependency. You have to
+  ;; install it separately via package-install
+  ;; `M-x package-install [ret] company`
+  (company-mode +1))
+
+
+(ensure-package tide
+  :ensure t
+  :config
+  (setq company-tooltip-align-annotations t)
+  (add-hook 'before-save-hook 'tide-format-before-save)
+  (add-hook 'typescript-mode-hook #'setup-tide-mode))
+
+
+(ensure-package k8s-mode)
+
+(ensure-package kubernetes
+		:config
+		(setq kubernetes-poll-frequency 300)
+		(setq kubernetes-redraw-frequency 300))
+
+(ensure-package git-link)
+
+(global-set-key (kbd "C-w") 'backward-kill-word)
+
+(server-start)
 ;;; emacs ends here
+
