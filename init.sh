@@ -1,3 +1,18 @@
+die() { echo "$*" 1>&2 ; exit 1; }
+git --version 2>&1 >/dev/null
+GIT_IS_AVAILABLE=$?
+
+if [ $GIT_IS_AVAILABLE -ne 0 ]; then
+    die "Git not installed"
+fi
+
+zsh --version 2>&1 >/dev/null
+ZSH_IS_AVAILABLE=$?
+
+if [ $ZSH_IS_AVAILABLE -ne 0 ]; then
+    die "ZSH not installed"
+fi
+
 pushd $HOME > /dev/null
 
 platform='unknown'
@@ -16,11 +31,16 @@ if [[ ! -d "$HOME/.env" ]]; then
 
     echo "Cloning env folder"
     git clone https://github.com/nurv/env.git .env > /dev/null
-
+    
     if [ ! -d "$ZSH" ]; then
       echo "Cloning oh my zsh"
       git clone https://github.com/robbyrussell/oh-my-zsh.git $ZSH > /dev/null
     fi
+
+    echo "Cloning plugins"
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+    git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
 
     echo "Rewiring..."
 
